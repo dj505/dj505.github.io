@@ -7,7 +7,7 @@
 
 ## About Me
 <img src="/assets/logo.jpg" align="left" width="200px"/>
-My name is Jayden, and I'm an arcade technician by trade. I also dabble in <strong>graphic design</strong>, <strong>programming</strong>, <strong>game dev</strong>, <strong>electronics</strong>, and <strong>PCB design.</strong> I've even had a coupe projects sponsored by PCBWay!
+My name is Jayden, and I'm an arcade technician by trade. I also dabble in <strong>graphic design</strong>, <strong>programming</strong>, <strong>game dev</strong>, <strong>electronics</strong>, and <strong>PCB design.</strong> I've even had a couple projects sponsored by PCBWay!
 <br><br>
 A lot of my projects are centered around arcade rhythm games, in particular Andamiro's <em><a href="https://en.wikipedia.org/wiki/Pump_It_Up_(video_game_series)">Pump it Up</a></em> series. I also have a strong passion for arcade games & hardware, retro consoles (collection, restoration, and modding), mechanical keyboards, and more! In addition, I've been working with 3D printers for over a decade, and have owned a little CNC machine for a couple years, which I mess around with every once in a while. I also dabble in Python and Lua scripting, with a side of embedded C/C++ for microcontrollers, and I've been working with Adobe tools such as Photoshop, Illustrator, and After Effects for many years.  
 <br clear="left"/>
