@@ -6,9 +6,11 @@
 > <dl><dt>"5 Panel"</dt><dd>A category of arcade dance game, controlled with five individual button panels arranged on the stage.<h6><em>i.e. <a href="https://en.wikipedia.org/wiki/Pump_It_Up_(video_game_series)">Pump it Up</a>, <a href="https://en.wikipedia.org/wiki/StepManiaX">StepManiaX</a></em></h6></dd></dl>
 
 ## About Me
-My name is Jayden, and I'm an arcade technician by trade. I also dabble in **graphic design**, **programming**, **game dev**, **electronics**, and **PCB design!**
-
-A lot of my projects are centered around arcade rhythm games, in particular Andamiro's <em><a href="https://en.wikipedia.org/wiki/Pump_It_Up_(video_game_series)">Pump it Up</a></em> series. 
+<img src="/assets/logo.jpg" align="left" width="200px"/>
+My name is Jayden, and I'm an arcade technician by trade. I also dabble in <strong>graphic design</strong>, <strong>programming</strong>, <strong>game dev</strong>, <strong>electronics</strong>, and <strong>PCB design.</strong> I've even had a coupe projects sponsored by PCBWay!
+<br><br>
+A lot of my projects are centered around arcade rhythm games, in particular Andamiro's <em><a href="https://en.wikipedia.org/wiki/Pump_It_Up_(video_game_series)">Pump it Up</a></em> series. I also have a strong passion for arcade games & hardware, retro consoles (collection, restoration, and modding), mechanical keyboards, and more! In addition, I've been working with 3D printers for over a decade, and have owned a little CNC machine for a couple years, which I mess around with every once in a while. I also dabble in Python and Lua scripting, with a side of embedded C/C++ for microcontrollers, and I've been working with Adobe tools such as Photoshop, Illustrator, and After Effects for many years.  
+<br clear="left"/>
 
 ## Noteworthy Projects
 Here's some of the stuff I've done!
@@ -28,5 +30,32 @@ Here's some of the stuff I've done!
 
 ---
 
-### Enjoy my work?
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
+### Q&A
+<details>
+  <summary>Questions? Answers!</summary>
+
+- <strong>Q:</strong> Where are you from?
+  - <strong>A:</strong> Canada!
+- <strong>Q:</strong> Is it really that cold there?
+  - <strong>A:</strong> Sometimes! Winters can be nasty. Summers are warmer than most people think.
+- <strong>Q:</strong> How long have you been playing dance games?
+  - <strong>A:</strong> Since at least 2016! It might be even earlier, but it's hard to say.
+- <strong>Q:</strong> What do you use to design your PCBs?
+  - <strong>A:</strong> <a href="https://www.kicad.org/">KiCAD!</a> It's free and open source, and as intimidating as it looks, it's very easy to learn.
+- <strong>Q:</strong> What resources do you recommend for learning?
+  - <strong>A:</strong> I started with <a href="https://wiki.ai03.com/books/pcb-design">ai03's design guide</a>! It's made with mechanical keyboard in mind, but it takes you through all the fundamentals for just about any project.
+- <strong>Q:</strong> Do you sell your projects?
+  - <strong>A:</strong> Generally yes, but in small quantities! I only really do small batches since it's all I can afford. Please feel free to reach out if you're interested!
+  
+</details>
+
+### Contact Me
+- Shoot me an email: <kbd><a href="mailto:business@5panel.dance">business@5panel.dance</a></kbd>
+- DM me on Discord: @dj505
+
+---
+
+### Enjoying my work? Finding it helpful?
+<a href="https://ko-fi.com/Y8Y8106HR"><img alt="Ko-Fi Donate Button" src="https://ko-fi.com/img/githubbutton_sm.svg" align="right"></a>
+Please consider donating! It's a massive help when it comes to getting new projects off the ground.
+
