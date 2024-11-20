@@ -1,0 +1,132 @@
+body {
+    background: #282c34;
+    color: #bec4cf;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border-top: thin solid #abb2bf;
+}
+
+hr.small {
+    max-width: 25%;
+    margin-left: 0;
+}
+
+a:link {
+    color: #56b6c2;
+}
+
+a:hover {
+    color: #61afef;
+}
+
+a:visited {
+    color: #c678dd;
+}
+
+div.info {
+    padding-left: 10px;
+    border-left: thick solid #61afef;
+    border-radius: 5px;
+    h2 {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: initial;
+        color: #61afef;
+    }
+
+    dl {
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+.topper-h1 {
+    color: #e5c07b;
+    font-weight: initial;
+    font-size: 2.75em;
+    margin-bottom: -15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.25) 4px 10px 10px;
+    animation: leftAnimateIn ease-out 0.3s;
+}
+
+.body-header {
+    font-family: 'Source Code Pro', monospace;
+    color: #e5c07b;
+    border-left: medium solid #e5c07b;
+    border-radius: 5px;
+    padding: 0px 0px 0px 10px;
+    text-shadow: rgba(0, 0, 0, 0.25) 2px 5px 5px;
+}
+
+.body-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+details {
+    cursor:pointer;
+}
+
+summary {
+    background-color: #32363e;
+    color: #bec4cf;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    border-left: medium solid #abb2bf;
+    border-radius: 5px;
+    margin: 8px 4px 8px 0px
+}
+
+ul {
+    line-height: 25px;
+    background: #32363e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px 15px 30px;
+    border-radius: 10px;
+}
+
+.ques {
+    margin-left: -15px;
+    list-style: none;
+}
+
+.ans {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.attn-label {
+    background-color: #282c34;
+    border-left: medium solid #56b6c2;
+    border-radius: 5px;
+    padding: 2px 4px 4px 4px;
+    margin: 0px 0px 0px 4px;
+}
+
+@keyframes leftAnimateIn {
+    0% {
+        opacity: 0;
+        margin-left: -30px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+details[open] summary ~ * {
+    animation: sweep-open .25s ease-out;
+}
+
+@keyframes sweep-open {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
