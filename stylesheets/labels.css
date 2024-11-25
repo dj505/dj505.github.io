@@ -6,9 +6,10 @@
     margin: 0px 0px 0px 4px;
     font-family: 'Source Code Pro', monospace;
     font-weight: initial;
+    font-size: 0.8em;
 }
 
-.label-red {
+.label-orange {
     background-color: #282c34;
     border-left: medium solid #e5c07b;
     border-radius: 5px;
@@ -16,6 +17,7 @@
     margin: 0px 0px 0px 4px;
     font-family: 'Source Code Pro', monospace;
     font-weight: initial;
+    font-size: 0.8em;
 }
 
 .label-green {
@@ -26,6 +28,7 @@
     margin: 0px 0px 0px 4px;
     font-family: 'Source Code Pro', monospace;
     font-weight: initial;
+    font-size: 0.8em;
 }
 
 .label-blue {
@@ -36,4 +39,5 @@
     margin: 0px 0px 0px 4px;
     font-family: 'Source Code Pro', monospace;
     font-weight: initial;
+    font-size: 0.8em;
 }
