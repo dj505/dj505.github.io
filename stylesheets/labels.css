@@ -1,0 +1,39 @@
+.label-red {
+    background-color: #282c34;
+    border-left: medium solid #e06c75;
+    border-radius: 5px;
+    padding: 2px 4px 4px 4px;
+    margin: 0px 0px 0px 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: initial;
+}
+
+.label-red {
+    background-color: #282c34;
+    border-left: medium solid #e5c07b;
+    border-radius: 5px;
+    padding: 2px 4px 4px 4px;
+    margin: 0px 0px 0px 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: initial;
+}
+
+.label-green {
+    background-color: #282c34;
+    border-left: medium solid #98c379;
+    border-radius: 5px;
+    padding: 2px 4px 4px 4px;
+    margin: 0px 0px 0px 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: initial;
+}
+
+.label-blue {
+    background-color: #282c34;
+    border-left: medium solid #61afef;
+    border-radius: 5px;
+    padding: 2px 4px 4px 4px;
+    margin: 0px 0px 0px 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: initial;
+}
