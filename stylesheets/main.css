@@ -36,6 +36,7 @@ a:visited {
 }
 
 div.info {
+    margin: 20px;
     padding-left: 10px;
     border-left: thick solid #61afef;
     border-radius: 5px;
