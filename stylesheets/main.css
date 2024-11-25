@@ -39,6 +39,8 @@ div.info {
     padding-left: 10px;
     border-left: thick solid #61afef;
     border-radius: 5px;
+    background-color: #1e222a;
+    
     h2 {
         font-family: 'Source Code Pro', monospace;
         font-weight: initial;
@@ -78,6 +80,10 @@ div.info {
 
 details {
     cursor:pointer;
+}
+
+dt {
+    font-weight: bold;
 }
 
 summary {
