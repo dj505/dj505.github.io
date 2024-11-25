@@ -51,7 +51,7 @@
 
             <p>
                 <h1 class="body-header">Drawbacks of Using a Simulator</h1>
-                <span class="boxdy-text">
+                <span class="body-text">
                     <p>
                         Simulators are built from the ground up to resemble the gameplay and mirror the core mechanics of a particular game.
                         They're rarely (if ever) perfect, and most have noticeable flaws that can detract from the experience. <strong>This is true of all simulators.</strong>
@@ -66,6 +66,19 @@
                     <h3>Remember:</h3>
                     <p>
                         Simulators aren't a replacement for official titles! <strong>Support Andamiro, and <span class="rainbow-text">support PUMP IT UP!</span></strong>
+                    </p>
+                </span>
+            </p>
+
+            <p>
+                <h1 class="body-header">Some Terminology</h1>
+                <span class="body-text">
+                    <p>
+                        You might see some terms that you may not already be familiar with later on down this page. Here are a couple and what they mean!
+                    </p>
+                    <p>
+                      <span class="attn-label">Simfile</span>: A file containing chart data for a simulator. Generally also used to refer to a complete bundle including audio and graphics.<br>
+                      <span class="attn-label">SSC</span>: The most widespread simfile format for Pump-style charts, made standard by StepMania 5. Modern simulators tend to use a slightly modified version.<br>
                     </p>
                 </span>
             </p>
@@ -147,6 +160,7 @@
                         <li>Will not work properly for the majority of Pump content</li>
                         <li>Essential mechanics are either entirely missing, or are not accurate to Pump</li>
                         <li>Zero meaningful maintenance, fixes, or improvements for the "pump" engine in years</li>
+                        <li>Cannot play PumpSanity simfiles</em>
                     </ul>
                 </p>
             </p>
@@ -179,6 +193,7 @@
                         <li>Missing adjustable AutoVelocity (AV)</li>
                         <li>Hold timing is slightly more lenient than arcade</li>
                         <li>Missing modern Phoenix-style scoring</li>
+                        <li>Cannot play PumpSanity simfiles</em>
                     </ul>
                 </p>
             </p>
@@ -207,7 +222,7 @@
                     <ul>
                         <li>Probably never made it past early alpha</li>
                         <li>Multiple sources agree it was buggy and incomplete</li>
-                        <li>Missing adjustable AutoVelocity (AV)</li>
+                        <li>Missing adjustable AutoVelocity</li>
                         <li>Very bootleggy</li>
                     </ul>
                 </p>
@@ -228,7 +243,7 @@
                     <li>All timing window options available in PIU, plus extras</li>
                     <li>Arcade-accurate lifebar with overflow</li>
                     <li>Several types of speed mods, including arcade-accurate AV</li>
-                    <li>Options for classic or Phoenix-style scoring and letter grades</li>
+                    <li>Options for classic or Phoenix-style scoring, letter grades & plates</li>
                     <li>Chart previews on the difficulty select menu</li>
                     <li>Options for experienced players (visualize lifebar overflow, accuracy, etc)
                     <li>All original UI/menu graphics and music</li>
@@ -242,7 +257,7 @@
                     <h3>Pros:</h3>
                     <ul>
                        <li>Arcade accurate timing, lifebar, and scoring</li>
-                       <li>Options for Phoenix scoring and grades</li>
+                       <li>Options for Phoenix scoring, grades & plates</li>
                        <li>Extra functionality for pros, or players who like seeing extra stats</li>
                        <li>Compatible with most (if not all) StepF2/StepP1 charts (custom & official)</li>
                        <li>Completely original graphics/music, not legally dubious</li>
@@ -257,6 +272,7 @@
                         <li>Some features are constrained by engine limitations</li>
                         <li>OutFox's "pump" mode engine is incomplete and has some minor issues</li>
                         <li>OutFox's "pump" mode engine does not yet support some visual effects found in many official songs</li>
+                        <li>Cannot play PumpSanity simfiles</em>
                     </ul>
                 </p>
             </p>
@@ -288,6 +304,7 @@
                         <li>Stuck with any issues it currently has, due to being discontinued</li>
                         <li>Hold note timing is slightly more lenient than arcade</li>
                         <li>Missing modern Phoenix-style scoring</li>
+                        <li>Cannot play PumpSanity simfiles</em>
                     </ul>
                 </p>
             </p>
@@ -305,8 +322,8 @@
                     StepPXX received infrequent updates and never really made it past the "early preview" stage, with a permanent watermark on the upper left corner.
                     There were some attempts to implement an online matching feature, but it seems they were limited to a private build that was only distributed selectively, and I'm not sure it got a public release.
                     StepPXX introduced a <strong>new simfile format</strong>, which accounted for some new modifiers that StepP1 did not support, but which rarely see widespread use.
-                    This new simfile format was <strong>not compatible with StepP1</strong> or any simulators made to use StepP1 simfiles, which pushed StepPXX simfiles into their own separate branch of the simulator community,
-                    starting a content accessibility divide that is still present today. Performance was also subpar on lower end machines, due to the security and encryption features present.
+                    This new simfile format is an SSC versoin that is <strong>not compatible with StepP1</strong> or any simulators made to use StepP1 simfiles, which pushed StepPXX simfiles into their own separate branch of the simulator community,
+                    starting a content accessibility divide that is still present today. Performance is also subpar on lower end machines, due to the security and encryption features present.
                 </p>
                 <p>
                     This was the first widespread simulator to include support for Mission or Quest zones from older mainline <em>Pump it Up</em> games,
@@ -334,6 +351,7 @@
                         <li>Hold release timing is extremely strict and inaccurate</li>
                         <li>Hold tick calculation is inaccurate</li>
                         <li>Missing modern Phoenix-style scoring</li>
+                        <li>Security implementation is rather heavy, performace is poor on MK9 arcade hardware</li>
                         <li>Extremely bootleggy, distributing a recreation of a current and supported game for free upon release</li>
                     </ul>
                 </p>
@@ -364,15 +382,77 @@
                     PumpSanity's use of copyrighted <em>Pump it Up</em> intellectual property became an issue when it was discovered that the <em>Pump it Up: Infinity</em> mission zone recreation was actually a near exact copy/paste
                     of the actual mission zone code and graphical assets from a previously leaked development build. This led to a request issued by Team Infinity to remove any and all <em>Pump it Up</em> branding and intellectual property from the game, on behalf of Andamiro.
                     The team was given the option to continue the PumpSanity project without this content, but they decided instead to discontinue the project of their own volition.
+                    There was originally planned to be a Linux-compatible build, including Phoenix scoring, but this would never be released.
                 </p>
-                </em>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul>
+                       <li>Has an extra "rainbow Perfect" timing window</li>
+                       <li>The only accessible way to play StepPXX and PumpSanity simfiles</li>
+                       <li>Somewhat widespread use, due to the closed ecosystem of content & <em>Pump it Up: XX</em> theme</li>
+                       <li>Includes most modifiers present in the <em>Pump it Up: XX</em> command window</li>
+                       <li>Includes recreations of mission zones from previous <em>Pump it Up</em> titles</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul>
+                        <li>The game crashes after every song if Discord is open, unless you block it via Windows Firewall settings</li>
+                        <li>Hold notes are buggy and can cause seemingly random combo breaks</li>
+                        <li>Hold release timing is extremely inaccurate, though better than StepPXX</li>
+                        <li>Hold tick calculation is inaccurate</li>
+                        <li>Public builds are missing modern Phoenix-style scoring</li>
+                        <li>Includes content that was taken without permission or credit</li>
+                        <li>Content exists in a closed ecosystem and locks out other established simulators</em>
+                        <li>Security implementation is rather heavy, performace is poor on MK9 arcade hardware</li>
+                        <li>May be a potential security risk due to janky and unmtained proprietary software integrations</li>
+                        <li>Extremely bootleggy, to the point where a takedown request was issued</li>
+                    </ul>
+                </p>
             </p>
 
             <p id="StepP1+">
                 <h1 class="body-header">StepP1+</h1>
                 <p><span class="label-blue">Maintained</span> <span class="label-green">Recommended</span></p>
                 <p>
-                    lorem ipsum dolor sit amet...
+                    StepP1+ is a community-maintained successor to <a href="#StepP1">StepP1</a>.
+                    It is an expansion of the <em>Pump it Up: PRIME 2015</em>, using decrypted graphics and audio ripped from the official game, with some extra assets borrowed from later games, and some original graphics.
+                    Some of the minor issues in StepP1 were fixed, including hold timing being made more accurate to arcade versions through hex editing.
+                    The theme and contents have also been decrypted, and are freely modifiable.
+                </p>
+                <p>
+                    Many quality of life improvements have been added to the theme, such as:
+                </p>
+                <ul>
+                    <li>Phoenix-style scoring</li>
+                    <li>Phoenix-style letter grades & plates</li>
+                    <li>Profile level & experience points</li>
+                    <li>Customizable profile avatars</li>
+                    <li>Indicators for "tournament legal" charts</li>
+                    <li>Song title and progress indicators during gameplay</li>
+                    <li>And way more than will fit here - check out the <a href="https://github.com/rayden-61/stepp1-plus/blob/main/CHANGELOG.txt" target="_blank">full changelog!</a></li>
+                </ul>
+                <p>
+                    StepP1+ is <strong>actively maintained</strong> and <strong>recommended</strong>.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul>
+                       <li>Widespread content</li>
+                       <li>Has an accompanying list of curated and maintained charts</li>
+                       <li>Available content up to <em>Pump it Up: Phoenix</em></li>
+                       <li>Large community</li>
+                       <li>Accurate mechanics and features up to <em>Pump it Up: Phoenix</em></li>
+                       <li>Includes PRIME 2-style adjustable AutoVelocity</li>
+                       <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                       <li>Contains manu quality of life improvements over StepP1, especially for home use</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul>
+                        <li>Very minor hold inaccuracies, (still more accurate than other listed StepMania-based simulators)</li>
+                        <li>Menus and UI are less accurate to official PRIME 2015, if that bothers you</li>
+                        <li>No option for old-style scoring and letter grades</li>
+                        <li>Incompatible with StepP1 high scores and profiles due to scorekeeping changes</li>
+                        <li>Cannot play PumpSanity simfiles</em>
+                    </ul>
                 </p>
             </p>
         </div>
