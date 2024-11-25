@@ -1,5 +1,5 @@
 .label-red {
-    background-color: #282c34;
+    background-color: #1e222a;
     border-left: medium solid #e06c75;
     border-radius: 5px;
     padding: 2px 4px 4px 4px;
@@ -10,7 +10,7 @@
 }
 
 .label-orange {
-    background-color: #282c34;
+    background-color: #1e222a;
     border-left: medium solid #e5c07b;
     border-radius: 5px;
     padding: 2px 4px 4px 4px;
@@ -21,7 +21,7 @@
 }
 
 .label-green {
-    background-color: #282c34;
+    background-color: #1e222a;
     border-left: medium solid #98c379;
     border-radius: 5px;
     padding: 2px 4px 4px 4px;
@@ -32,7 +32,7 @@
 }
 
 .label-blue {
-    background-color: #282c34;
+    background-color: #1e222a;
     border-left: medium solid #61afef;
     border-radius: 5px;
     padding: 2px 4px 4px 4px;
