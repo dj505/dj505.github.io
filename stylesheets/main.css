@@ -184,10 +184,6 @@ table td, table td {
         border-left: medium solid #56b6c2;
         border-radius: 5px;
     }
-
-    p {
-        line-height: 1.5em;
-    }
 }
 
 @keyframes leftAnimateIn {
