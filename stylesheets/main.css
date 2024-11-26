@@ -92,6 +92,16 @@ div {
     font-size: 1em;
 }
 
+.codebox {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #1e222a;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    white-space: pre-wrap;
+    line-height: 0.75em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 details {
     cursor:pointer;
 }
