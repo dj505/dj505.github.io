@@ -841,14 +841,32 @@
             </div>
 
             <div>
+                <h3 class="body-header">SSC Versions</h3>
+                <span class="body-text">
+                    <p>
+                        This is a whole can of worms that I'll be getting into eventually. I'm leaving this as a stub for now until I have time to look further into it.
+                    </p>
+                    <p>
+                        For now, the gist of it is that <strong>different simulators may use different revisions</strong> of the SSC format.
+                        For example, StepF2 uses SSC version <strong>0.81</strong>, which is a version with slightly different behavior and specifications that was made and implemented for StepF2 by xMAx.
+                    </p>
+                    <p>
+                        Some simulators, like Project OutFox, rely on this #VERSION tag to tell the engine how to interpret the chart, and whether it needs to handle specific things a specific way.
+                        StepF2 charts would not play back as expected in OutFox if the version number is not properly specified, because it's programmed to read StepF2 charts a little diferently from other "pump" charts.
+                    </p>
+                </span>
+            </div>
+
+            <div>
                 <h3 class="body-header">What Is Lua?</h3>
                 <span class="body-text">
                     <p>
                         Every once in a while you might encounter a simfile that contains .lua files. Lua is the scripting language used by StepMania for just about everything that isn't the engine itself.
                         In this case, the Lua files present in simfiles contain scripted modifiers that can do just about anything, from recreating effects found in official <am>Pump it Up</em> charts, to creating entire minigames within the chart!
-                        One of my favourite examples ever of this is <em>Mawaru Infinity</em>, which was one of my first introductions to PIU as a whole: <br/>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xfi_4IXq8q8?si=OERTzC3CWv7JvByb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        One of my favourite examples ever of this is <em>Mawaru Infinity</em>, which was one of my first introductions to PIU as a whole:
                     </p>
+                    <br/>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xfi_4IXq8q8?si=OERTzC3CWv7JvByb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>
                         Lua is way too in-depth and open-ended for me to be able to delve into here, but I'll at least provide some useful resources:
                     </p>
