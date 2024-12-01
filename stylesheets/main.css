@@ -153,6 +153,14 @@ ul {
     border-radius: 10px;
 }
 
+ul.pros {
+    border-left: medium solid #98c379;
+}
+
+ul.cons {
+    border-left: medium solid #e06c75;
+}
+
 .ques {
     margin-left: -15px;
     list-style: none;
