@@ -101,6 +101,7 @@
                     <p>
                       <span class="attn-label">Simfile</span>: A file containing chart data for a simulator. Generally also used to refer to a complete bundle including audio and graphics.<br/>
                       <span class="attn-label">SSC</span>: The most widespread simfile format for Pump-style charts, made standard by StepMania 5. Modern simulators tend to use a slightly modified version.<br/>
+                      <span class="attn-label">BGA</span>: Short for "Background Animation", refers to videos or sequences that display in the background during gameplay.<br/>
                     </p>
                 </span>
             </div>
@@ -858,6 +859,26 @@
                     <p>
                         Some simulators, like Project OutFox, rely on this #VERSION tag to tell the engine how to interpret the chart, and whether it needs to handle specific things a specific way.
                         StepF2 charts would not play back as expected in OutFox if the version number is not properly specified, because it's programmed to read StepF2 charts a little diferently from other "pump" charts.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">Background Videos (BGAs)</h2>
+                <span class="body-text">
+                    <p>
+                        Background videos, also known as BGAs, can sometimes trip up people who are new to simulation and/or charting.
+                    </p>
+                    <p>
+                        A common question is quether or not BGAs are necessary, and whether they can be deleted to save space.
+                        <strong>Typically, yes! You can delete BGAs</strong> if they take up too much room, and they are not a necessity to keep around.
+                        The majority of simulators have a default background animation or graphic that they display when dedicated files are not defined or present.
+                    </p>
+                    <p>
+                        Most official simfiles <strong>store their BGAs in the SongMovies folder.</strong>
+                        If you're looking to free up some space, you can remove most of these - just <strong>do not remove Black.mpg</strong> or any equivalent!
+                        Other simfiles include their BGAs directly with the simfiles themselves, present in the same directory as the SSC file and such.
+                        These can also be deleted to free up space, but if you decide to do this, it's also a good idea to edit the SSC file directly in a text editor to remove any references to these files too.
                     </p>
                 </span>
             </div>
