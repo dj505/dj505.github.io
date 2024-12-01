@@ -160,9 +160,8 @@ ul {
 }
 
 .youtube-video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  padding: 0px 5px 0px 5px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 footer {
