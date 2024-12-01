@@ -83,7 +83,7 @@ div.warn {
         font-family: 'Source Code Pro', monospace;
         font-weight: initial;
         color: #e5c07b;
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     dl {
