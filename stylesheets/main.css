@@ -181,6 +181,15 @@ ul.cons {
     font-weight: bold;
 }
 
+.download-btn {
+    background-color: #282c34;
+    border-left: medium solid #56b6c2;
+    border-radius: 5px;
+    margin: 0px 0px 0px 4px;
+    padding: 5px 5px 5px 0px;
+    font-weight: bold;
+}
+
 .grid {
     display: flex;
 }
