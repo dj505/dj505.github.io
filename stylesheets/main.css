@@ -151,6 +151,14 @@ ul {
     font-weight: bold;
 }
 
+.grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
 footer {
     background: #32363e;
     padding: 20px 0px 0px 0px;
@@ -158,6 +166,15 @@ footer {
     box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.6),
                 inset 0 -60px 20px -20px rgba(0,0,0,0.6);
     flex: 0 0 50px;
+
+    svg {
+        fill: #bec4cf;
+        padding: 0px 10px 0px 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 table td, table td {
@@ -166,10 +183,23 @@ table td, table td {
     padding: 0px 30px 0px 30px;
 }
 
+.socialbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 .copyright {
     background-color: #282c34;
     text-align: center;
     padding: 10px 0px 10px 0px;
+    margin: 0;
+
+    .socials {
+        padding: 20px 0px 10px 0px;
+        margin: 0px;
+    }
 }
 
 .back-to-top {
