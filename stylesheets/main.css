@@ -159,6 +159,12 @@ ul {
     flex: 1;
 }
 
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  padding: 0px 5px 0px 5px;
+}
+
 footer {
     background: #32363e;
     padding: 20px 0px 0px 0px;
