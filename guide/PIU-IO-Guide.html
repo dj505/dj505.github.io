@@ -10,7 +10,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://5panel.dance" />
         <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
-        <meta property="og:description" content="Trying to figure out which simulator is right for you? Start here!" />
+        <meta property="og:description" content="Information regarding official and custom Pump it Up IO boards." />
         <meta name="theme-color" content="#61afef" />
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
     </head>
@@ -129,9 +129,20 @@
                         The "LXIO" board was released around late 2016/early 2017 with the LX model cabinet, which was made available alongside <em>Pump it Up: PRIME 2</em>.
                         It is a completely new piece of hardware compared to the PIUIO, featuring built-in support for the front panel button board, as well as faster polling rates (up to ~1000Hz).
                         Unlike the PIUIO, the LXIO operates as a standard USB HID device, and doesn't suffer from the USB 1.0 control transfer shenanigans that the PIUIO does. This means that it is not backwards compatible with games that only support the PIUIO.
+                        The only games that officially support it are <em>Pump it Up: PRIME 2</em> and onwards. Older games can only be played via LXIO through unofficial, third party means.
                     </p>
                     <p>
-                        However, because the LXIO is so new, the only games that officially support it are <em>Pump it Up: PRIME 2</em> and onwards. Older games can only be played via LXIO through unofficial, third party means.
+                        There are a few hardware revisions of the LXIO, too.
+                        Boards produced from release until roughly mid-late 2024 were based on Atmel ATXMega microcontrollers, and were officially referred to as "ATXMega PIUIO" boards.
+                        There were slightly different hardware revisions for boards included in LX cabinets, versus boards that were available as upgrade kits for older cabinets; I'll update this section to clarify once I have more information.
+                        Later boards produced towards the end of 2024 and onward are based on a Nuvoton ARM microcontroller.
+                        I'm not sure which specifically, but they're functionally identical to the ATXMega boards, just with a slightly different firmware. If I had to guess, this was probably done for cost reasons.
+                    </p>
+                    <p>
+                        Andamiro has also released several firmware updates for the LXIO.
+                        There isn't a lot of documentation on what changed, but the USB PID seems to be different for each.
+                        The only thing I've seen this actually have an effect on is whether or not the board works for third-party IO hooks, used to make older titles LXIO-compatible; some drivers and hooks expect a specific PID/VID, and hadn't been tested on all firmwares.
+                        It doesn't seem to make any perceptible difference to anyone who's just playing the game.
                     </p>
                 </span>
             </div>
@@ -179,7 +190,7 @@
                         The button board on LX model cabinets <strong>is not</strong> the same hardware; instead, the LXIO added support for front panel buttons with no additional IO board.
                     </p>
                     <p>
-                        The button board IO has a different VID/PID than the PIUIO, but it functions otherwise identically, running in USB 1.0 mode and using control transfer requests for polling data.
+                        The button board IO has a different USB PID than the PIUIO, but it functions otherwise identically, running in USB 1.0 mode and using control transfer requests for polling data.
                         It cannot be used for hitting arrows, though. Only menu navigation.
                     </p>
                 </span>
