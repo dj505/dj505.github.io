@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>5panel.dance</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Pump it Up Simulator Guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://5panel.dance" />
+        <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
+        <meta property="og:description" content="Trying to figure out which simulator is right for you? Start here!" />
+        <meta name="theme-color" content="#61afef" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    </head>
+
+    <body>
+        <div class="back-to-top">
+            Quick Index<br/><br/>
+            <a href="#top">Back to Top</a><br/>
+        </div>
+
+        <div class="content" id="top">
+            <a href="https://5panel.dance">
+                <h1 align="center" class="topper-h1">5panel.dance</h1>
+            </a>
+            <h2 align="center">↙️↖️⏺️↗️↘️</h2>
+
+            <p align="center"><a href="https://github.com/dj505">GitHub</a> • <a href="https://youtube.com/dj505itg">YouTube</a> • <a href="https://bsky.app/profile/5panel.dance">BlueSky</a> • <a href="https://discord.com/invite/ctMByBy">Discord</a> • <a href="https://ko-fi.com/dj505piu">Ko-Fi</a></p>
+
+            <br/>
+
+            <div class="info">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    Info
+                </h2>
+                <dl>
+                    <dt>This page is a work in progress!</dt>
+                    <dd>Information here is subject to change. If you find inaccuracies or have suggestions, <a href="#Contact">contact me!</a></dd>
+                    <br/>
+                    <dt>"Simulator" vs. "Emulator"</dt>
+                    <dd>Simulators recreate an experience from scratch using original code (eg. StepMania); emulators run the original code on platforms it was not made for (eg. running <em>PIU Exceed</em> PS2 in PCSX2)</dd>
+                </dl>
+            </div>
+
+            <br/>
+
+            <div>
+                <h2 class="body-header">Page Directory</h2>
+                <!-- Ugly formatting is necessary here to preserve the whitespace because I don't wanna fill it with &nbsps -->
+                <p class="codebox">
+<a href="https://5panel.dance">5panel.dance/</a><br/>
+└── guide/<br/>
+    └── Pump it Up Simulator Guide<br/>
+        ├── <a href="#IoOverview">IO Boards & Overview</a><br/>
+        └── <a href="#DIY">DIY Options & Modifications</a>
+                </p>
+            </div>
+
+            <br />
+
+            <div id="IoOverview">
+                <h2 class="body-header">What Is an IO Board?</h2>
+                <span class="body-text">
+                    <p>
+                        An IO board, short for "Input/Output board," is a circuit board responsible for handling communication between a game and its various inputs and outputs.
+                        Many arcade games are built with a proprietary IO device, to ensure that players can't just plug in a gamepad or keyboard to cheat the system.
+                        This is especially important for games like <em>Pump it Up</em>, where people pulling up to the cab with a keyboard and playing with their hands would be very problematic for the leaderboards.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">Types of PIU I/O Boards</h2>
+                <span class="body-text">
+                    <p>
+                        <em>Pump it Up</em> has used several different proprietary IO boards throughout its lifetime.
+                        This guide will be focusing primarily on <strong>modern IO boards</strong>, as very few people are looking for information on older boards due to incompatibility with modern setups.
+                        I also don't really know anything about IO boards older than the MK6IO. I'll update this page as I learn more.
+                    </p>
+                    <p>
+                        The most commonly discussed boards, both official and unofficial, are as follows.
+                        Click on any to jump to its section for more information.
+                    </p>
+                </span>
+                <ul>
+                    <li>
+                        <span class="label-green">Official</span> <a href="#LXIO"><span class="attn-label">LXIO</span></a> | MK10IO, ATXMega PIUIO, Nuvoton PIUIO
+                    </li>
+                    <li>
+                        <span class="label-green">Official</span> <a href="#PIUIO"><span class="attn-label">PIUIO</span></a> | MK6IO, MK9IO
+                    </li>
+                    <li>
+                        <span class="label-green">Official</span> <a href="#ButtonBoard"><span class="attn-label">Button Board IO</span></a>
+                    </li>
+                    <li>
+                        <span class="label-blue">Custom/DIY</span> <a href="#BrokeIO"><span class="attn-label">BrokeIO</span></a>
+                    </li>
+                    <li>
+                        <span class="label-blue">Custom/DIY</span> <a href="#piuio-pico"><span class="attn-label">piuio-pico</span></a>
+                    </li>
+                    <li>
+                        <span class="label-blue">Custom/DIY</span> <a href="#piuio_clone"><span class="attn-label">piuio_clone</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="body-header">Official IO Boards</h2>
+                <span class="body-text">
+                    <p>
+                        The following section will cover <strong>official IO boards</strong> used in <em>Pump it Up</em> cabinets manufactured by Andamiro.
+                    </p>
+                </span>
+            </div>
+
+            <div id="LXIO">
+                <h3 class="body-header">LXIO</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="attn-label">AKA:</span> MK10IO, ATXMega PIUIO, Nuvoton PIUIO
+                        <span class="attn-label">Compatibility:</span> PRIME 2 - Phoenix
+                    </p>
+                    <p>
+                        The "LXIO" board was released around late 2016/early 2017 with the LX model cabinet, which was made available alongside <em>Pump it Up: PRIME 2</em>.
+                        It is a completely new piece of hardware compared to the PIUIO, featuring built-in support for the front panel button board, as well as faster polling rates (up to ~1000Hz).
+                        Unlike the PIUIO, the LXIO operates as a standard USB HID device, and doesn't suffer from the USB 1.0 control transfer shenanigans that the PIUIO does. This means that it is not backwards compatible with games that only support the PIUIO.
+                    </p>
+                    <p>
+                        However, because the LXIO is so new, the only games that officially support it are <em>Pump it Up: PRIME 2</em> and onwards. Older games can only be played via LXIO through unofficial, third party means.
+                    </p>
+                </span>
+            </div>
+
+            <div id="PIUIO">
+                <h3 class="body-header">PIUIO</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="attn-label">AKA:</span> MK6IO, MK9IO
+                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                    </p>
+                    <p>
+                        The PIUIO is by far the most common and widely supported IO board.
+                        It was released with the MK6 PC hardware used in <em>Pump it Up: Exceed 2</em> and has been supported by every game since.
+                        It does not include built-in support button board hardware, and has a very limited polling speed, maxing out at around 250Hz but averaging considerably lower.
+                        However, using third party drivers (eg. piuio2key or piuio2vjoy) to run the device in USB 2.0 mode <strong>for use with simulators</strong> can achieve upwards of 1000Hz polling rates.
+                        This is not possible on official software.
+                    </p>
+                    <p>
+                        The PIUIO is often looked down on as inferior hardware due to its slow polling, but it's powered by the Cypress EZ-USB FX2 microcontroller, which is quite capable.
+                        The actual reason behind the polling rate issues stems from a decision Andamiro made when writing the PIUIO's firmware.
+                        Data is moved back and forth between the game and the PIUIO using <strong>control transfer requests</strong>, which are designed to set up or tear down a device connection, not move polling data around.
+                        However, with USB 1.0, control transfers have a <strong>guaranteed round trip time</strong>, meaning the same length of time will always pass between sending the data and receiving it back.
+                        This guarantees a stable and consistent polling speed with no jitter, but with the tradeoff of it being <em>really slow.</em>
+                    </p>
+                    <p>
+                        If Anadmiro made the decision to run the PIUIO at USB 2.0 speeds, it would be considerably faster, at 250us per round trip instead of 10ms.
+                        However, they claim to have run into reliability issues at those speeds, so the device was forced down to USB 1.0 speeds by official games.
+                    </p>
+                </span>
+            </div>
+
+            <div id="ButtonBoard">
+                <h3 class="body-header">Button Board IO</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="attn-label">AKA:</span> "the buttonboard"
+                        <span class="attn-label">Compatibility:</span> Pro - Phoenix
+                    </p>
+                    <p>
+                        The button board IO was released as part of an upgrade kit for <em>Pump it Up: PRO</em>, initially for FX and GX model cabinets, alongside an actual button board plate.
+                        Once installed, players would be able to navigate menus using four buttons on the front of the cabinet instead of the dance pads. Supported inputs were left, right, select, and options.
+                        The button board was <strong>required</strong> by <em>Pro</em> and <em>Pro 2</em>, which only allowed menu inputs through the front buttons, similar to <em>In the Groove</em>.
+                        CX and TX cabinet models include built-in button boards, with no need for a separate upgrade kit. The hardware is identical internally, if I'm not mistaken.
+                        The button board on LX model cabinets <strong>is not</strong> the same hardware; instead, the LXIO added support for front panel buttons with no additional IO board.
+                    </p>
+                    <p>
+                        The button board IO has a different VID/PID than the PIUIO, but it functions otherwise identically, running in USB 1.0 mode and using control transfer requests for polling data.
+                        It cannot be used for hitting arrows, though. Only menu navigation.
+                    </p>
+                </span>
+            </div>
+
+            <br />
+
+            <div id="DIY">
+                <h2 class="body-header">DIY Options</h2>
+                <span class="body-text">
+                    <p>
+                        Due to the prohibitive cost of official hardware for anyone that isn't an arcade owner and operator with money to burn on upgrades, the community has created several low-cost DIY solutions for playing official PIU software at home!
+                        These options range from free, to ~$5, to ~$100 depending on the hardware, overall quality, and the extent of DIY stuff you're willing to do.
+                        The most commonly referenced projects can be found in this section.
+                    </p>
+                </span>
+            </div>
+
+            <div id="BrokeIO">
+                <h3 class="body-header">BrokeIO</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="attn-label">Compatibility:</span> Yes
+                    </p>
+                    <p>
+                        BrokeIO is a custom IO board developed by <a href="https://github.com/sugoku">Sugoku</a> as a drop-in replacement for the PIUIO, sharing a similar form factor and layout.
+                        It's based on the Raspbbery Pi RP2040 microcontroller, and supports essentially all cabinet hardware (including lights!) without any extra setup.
+                        By holding down the service button behind the coin door for 2 seconds, the IO board goes into a configuration mode, where it can be toggled between PIUIO, LXIO, keyboard, gamepad, XInput, and Nintendo Switch modes.
+                    </p>
+                    <p>
+                        This is easily the best and most versatile IO replacement that currently exists, and given how easy it is to install, it's hard to beat.
+                        It works with any game that supports the PIUIO, it can be used in LXIO modwe for faster polling rates on <em>PRIME 2</em> and later, and you can use it natively on simulators via gamepad and keybnoard modes.
+                        You can also play Mario Kart 8 Deluxe on your dance pads with it! Or any other Nintendo Switch game!
+                    </p>
+                    <p>
+                        The only current downside is that these boards are not mass produced and are sold in small batches every once in a while, for the time being.
+                        I will update this page with more information over time regarding availability.
+                    </p>
+                    <p>
+                        The firmware is open source, and you can find it <a href="https://github.com/sugoku/piuio-pico-brokeio">here</a>.
+                </span>
+            </div>
+
+            <div id="piuio-pico">
+                <h3 class="body-header">piuio-pico</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="label-blue">AKA:</span> the PicoFX firmware
+                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                    </p>
+                    <p>
+                        piuio-pico was developed for a hand controller I designed called the <a href="https://github.com/dj505/PicoFX">PicoFX</a>.
+                        All you need to be able to use it is a $4 Raspberry Pi Pico microcontroller (specifically the RP2040-based Pico 1, not the RP2350-based Pico 2), and a willingness to learn some DIY electronics stuff if you don't already have the knowledge or experience.
+                        The codebase currently only supports full-panel inputs with no multiplexing, meaning that the game will see all 4 sensors light up at the same time.
+                        <strong>Be advised:</strong> this <em>may potentially</em> be detected as cheating if used on currently supported and online games!
+                        It also supports lights for each panel, and WS2812B-compatible ARGB LEDs for cabinet lights.
+                        There is an <strong>experimental branch for button board functionality</strong>, which has been tested and works with official games, but may be changed in the future.
+                    </p>
+                    <p>
+                        Just because this code was written for a specific use case doesn't mean you can't wire it up to your own hardware, though!
+                        piuio-pico has been used for everything from custom hand controllers to full dance pads.
+                        For 12V LEDs, you will need to bring your own hardware in the form of some MOSFETs, and be willing to modify the code for cabinet lights if you want to use anything more than a strip of 6 WS2812B-compatible LEDs.
+                        But for a basic setup, if all you need is buttons, it can do that no problem! You can even buy a Pico with headers or screw terminals preattached if you can't/don't want to solder.
+                    </p>
+                    <p>
+                        For power users and/or those who are willing to order a custom PCB, my <a href="https://github.com/dj505/PicoIO">PicoIO</a> board breaks out all of the inputs to JST XH connectors.
+                        The connectors for each button have pins for 5V-12V LEDs via built-in MOSFETs; you just need to provide an external power supply appropriate for the LEDs.
+                        WS2812B data and power pins are also exposed, alongside some extra IO that aren't used by the firmware, in case you want to play around with addons.
+                    </p>
+                    <p>
+                        piuio-pico's codebase is open source, and you can find it <a href="https://github.com/48productions/piuio-pico">here</a>.
+                </span>
+            </div>
+
+            <div id="piuio_clone">
+                <h3 class="body-header">piuio_clone</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                    </p>
+                    <p>
+                        piuio_clone is a PIUIO emulation firmware for the ATMega328 (or, more commonly, the Arduino Uno) developed by <a href="https://github.com/racerxdl">racerdxl</a>.
+                        This was the only real option back when I first threw together a PIUIO clone for Fiesta 2 back in 2016 or so when I was just getting into PIU at home!
+                        There are some easy to follow schematics available in the <a href="https://github.com/racerxdl/piuio_clone/tree/simple">"simple" branch</a> to get you up and running, though keep in mind the "simple" branch <strong>does not support lights</strong>.
+                        All you need is an Arduino Uno (or compatible clone), a USB cable you can cut apart, and a way to wire up your desired buttons.
+                    </p>
+                    <p>
+                        The main branch of the software supports all cabinet buttons and lights, but is <strong>configured for OpenITG and StepMania</strong>.
+                        I personally haven't used this branch, and I can't speak for how difficulty it is to set it up and get everything wired.
+                        <strong>For anyone that just wants to make a pad work,</strong> it's recommended that you use the "simple" branch.
+                    </p>
+                    <p>
+                        Power users, or those willing to learn how to make an AVR work without a whole development board, can build a very simple and straightforward circuit with a bare ATMega328, clock, and necessary passive components to make a barebones dedicated PIUIO clone on nothing but a breadboard or piece of perfboard.
+                        I wouldn't recommend this for first time use unless you know what you're doing, but it's what I eventually swapped over to, and it served me well for many years!
+                    </p>
+                    <p>
+                        The main drawback for this project is that it uses bitbanged USB on a microcontroller that's already not very fast, so polling rates are going to be rather slow even if you use a custom driver like piuio2key.
+                        I would recommend using <a href="piuio-pico">piuio-pico</a> unless you just so happen to have a spare Arduino Uno or some ATMega328s laying around.
+                    </p>
+                    <p>
+                        You can find the main repository for piuio_clone <a href="https://github.com/racerxdl/piuio_clone">here</a>.
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <div class="content" id="Contact">
+                <table>
+                    <tbody>
+                        <td>
+                            <h3 class="body-header">Contact Me</h3>
+                            <span class="body-text">Looking to get in contact? Got any other questions? Just wanna say hi?</span>
+                            <ul>
+                                <li>Email: <span class="attn-label"><a href="mailto:&#098;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#053;&#112;&#097;&#110;&#101;&#108;&#046;&#100;&#097;&#110;&#099;&#101;">&#098;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#053;&#112;&#097;&#110;&#101;&#108;&#046;&#100;&#097;&#110;&#099;&#101;</a></span></li>
+                                <li>Discord: <span class="attn-label">@dj505</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h3 class="body-header">Support Me</h3>
+                            <span class="body-text">Please consider donating! It's a massive help when it comes to getting new projects off the ground.</span><br><br>
+                            <a href="https://ko-fi.com/Y8Y8106HR"><img alt="Ko-Fi Donate Button" src="https://ko-fi.com/img/githubbutton_sm.svg" float="right"></a>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="copyright">
+                <div class="socials">
+                    <a href="https://github.com/dj505">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="48px"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+
+                    <a href="https://youtube.com/dj505itg">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="48px"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+
+                    <a href="https://bsky.app/profile/5panel.dance">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="48px"><title>Bluesky</title><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+                    </a>
+
+                    <a href="https://discord.com/invite/ctMByBy">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="48px"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    </a>
+
+                    <a href="https://ko-fi.com/dj505piu">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"><title>Ko-fi</title><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+                    </a>
+                </div>
+                Copyright © 2024 dj505 | All Rights Reserved.
+            </div>
+        </footer>
+    </body>
+
+</html>
