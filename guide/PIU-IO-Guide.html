@@ -19,6 +19,8 @@
         <div class="back-to-top">
             Quick Index<br/><br/>
             <a href="#top">Back to Top</a><br/>
+            <a href="#IoOverview">IO Boards & Overview</a><br/>
+            <a href="#DIY">DIY Options & Modifications</a>
         </div>
 
         <div class="content" id="top">
@@ -39,9 +41,6 @@
                 <dl>
                     <dt>This page is a work in progress!</dt>
                     <dd>Information here is subject to change. If you find inaccuracies or have suggestions, <a href="#Contact">contact me!</a></dd>
-                    <br/>
-                    <dt>"Simulator" vs. "Emulator"</dt>
-                    <dd>Simulators recreate an experience from scratch using original code (eg. StepMania); emulators run the original code on platforms it was not made for (eg. running <em>PIU Exceed</em> PS2 in PCSX2)</dd>
                 </dl>
             </div>
 
@@ -69,6 +68,9 @@
                         Many arcade games are built with a proprietary IO device, to ensure that players can't just plug in a gamepad or keyboard to cheat the system.
                         This is especially important for games like <em>Pump it Up</em>, where people pulling up to the cab with a keyboard and playing with their hands would be very problematic for the leaderboards.
                     </p>
+                    <p>
+                        This page will <strong>only</strong> be covering IO boards that <strong>work with official PIU software</strong> in some capacity, without requiring modifications to the game's software or environment.
+                    </p>
                 </span>
             </div>
 
@@ -87,10 +89,10 @@
                 </span>
                 <ul>
                     <li>
-                        <span class="label-green">Official</span> <a href="#LXIO"><span class="attn-label">LXIO</span></a> | MK10IO, ATXMega PIUIO, Nuvoton PIUIO
+                        <span class="label-green">Official</span> <a href="#LXIO"><span class="attn-label">LXIO</span></a> // <em>MK10IO, ATXMega PIUIO, Nuvoton PIUIO</em>
                     </li>
                     <li>
-                        <span class="label-green">Official</span> <a href="#PIUIO"><span class="attn-label">PIUIO</span></a> | MK6IO, MK9IO
+                        <span class="label-green">Official</span> <a href="#PIUIO"><span class="attn-label">PIUIO</span></a> // <em>MK6IO, MK9IO</em>
                     </li>
                     <li>
                         <span class="label-green">Official</span> <a href="#ButtonBoard"><span class="attn-label">Button Board IO</span></a>
@@ -120,8 +122,8 @@
                 <h3 class="body-header">LXIO</h3>
                 <span class="body-text">
                     <p>
-                        <span class="attn-label">AKA:</span> MK10IO, ATXMega PIUIO, Nuvoton PIUIO
-                        <span class="attn-label">Compatibility:</span> PRIME 2 - Phoenix
+                        <span class="label-blue">AKA:</span> MK10IO, ATXMega PIUIO, Nuvoton PIUIO <br />
+                        <span class="label-blue">Compatibility:</span> PRIME 2 - Phoenix
                     </p>
                     <p>
                         The "LXIO" board was released around late 2016/early 2017 with the LX model cabinet, which was made available alongside <em>Pump it Up: PRIME 2</em>.
@@ -138,8 +140,8 @@
                 <h3 class="body-header">PIUIO</h3>
                 <span class="body-text">
                     <p>
-                        <span class="attn-label">AKA:</span> MK6IO, MK9IO
-                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                        <span class="label-blue">AKA:</span> MK6IO, MK9IO <br />
+                        <span class="label-blue">Compatibility:</span> Exceed 2 - Phoenix
                     </p>
                     <p>
                         The PIUIO is by far the most common and widely supported IO board.
@@ -166,8 +168,8 @@
                 <h3 class="body-header">Button Board IO</h3>
                 <span class="body-text">
                     <p>
-                        <span class="attn-label">AKA:</span> "the buttonboard"
-                        <span class="attn-label">Compatibility:</span> Pro - Phoenix
+                        <span class="label-blue">AKA:</span> "the buttonboard" <br />
+                        <span class="label-blue">Compatibility:</span> Pro - Phoenix
                     </p>
                     <p>
                         The button board IO was released as part of an upgrade kit for <em>Pump it Up: PRO</em>, initially for FX and GX model cabinets, alongside an actual button board plate.
@@ -182,8 +184,6 @@
                     </p>
                 </span>
             </div>
-
-            <br />
 
             <div id="DIY">
                 <h2 class="body-header">DIY Options</h2>
@@ -200,7 +200,7 @@
                 <h3 class="body-header">BrokeIO</h3>
                 <span class="body-text">
                     <p>
-                        <span class="attn-label">Compatibility:</span> Yes
+                        <span class="label-blue">Compatibility:</span> Yes
                     </p>
                     <p>
                         BrokeIO is a custom IO board developed by <a href="https://github.com/sugoku">Sugoku</a> as a drop-in replacement for the PIUIO, sharing a similar form factor and layout.
@@ -217,7 +217,8 @@
                         I will update this page with more information over time regarding availability.
                     </p>
                     <p>
-                        The firmware is open source, and you can find it <a href="https://github.com/sugoku/piuio-pico-brokeio">here</a>.
+                        The firmware is open source, and you can find it <a href="https://github.com/sugoku/piuio-pico-brokeio"><span class="attn-label">here</span></a>.
+                    </p>
                 </span>
             </div>
 
@@ -225,8 +226,8 @@
                 <h3 class="body-header">piuio-pico</h3>
                 <span class="body-text">
                     <p>
-                        <span class="label-blue">AKA:</span> the PicoFX firmware
-                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                        <span class="label-blue">AKA:</span> the PicoFX firmware <br />
+                        <span class="label-blue">Compatibility:</span> Exceed 2 - Phoenix
                     </p>
                     <p>
                         piuio-pico was developed for a hand controller I designed called the <a href="https://github.com/dj505/PicoFX">PicoFX</a>.
@@ -248,7 +249,8 @@
                         WS2812B data and power pins are also exposed, alongside some extra IO that aren't used by the firmware, in case you want to play around with addons.
                     </p>
                     <p>
-                        piuio-pico's codebase is open source, and you can find it <a href="https://github.com/48productions/piuio-pico">here</a>.
+                        piuio-pico's codebase is open source, and you can find it <a href="https://github.com/48productions/piuio-pico"><span class="attn-label">here</span></a>.
+                    </p>
                 </span>
             </div>
 
@@ -256,7 +258,7 @@
                 <h3 class="body-header">piuio_clone</h3>
                 <span class="body-text">
                     <p>
-                        <span class="attn-label">Compatibility:</span> Exceed 2 - Phoenix
+                        <span class="label-blue">Compatibility:</span> Exceed 2 - Phoenix
                     </p>
                     <p>
                         piuio_clone is a PIUIO emulation firmware for the ATMega328 (or, more commonly, the Arduino Uno) developed by <a href="https://github.com/racerxdl">racerdxl</a>.
@@ -278,7 +280,8 @@
                         I would recommend using <a href="piuio-pico">piuio-pico</a> unless you just so happen to have a spare Arduino Uno or some ATMega328s laying around.
                     </p>
                     <p>
-                        You can find the main repository for piuio_clone <a href="https://github.com/racerxdl/piuio_clone">here</a>.
+                        You can find the main repository for piuio_clone <a href="https://github.com/racerxdl/piuio_clone"><span class="attn-label">here</span></a>.
+                    </p>
                 </span>
             </div>
         </div>
