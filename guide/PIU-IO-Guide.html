@@ -74,6 +74,30 @@
                 </span>
             </div>
 
+            <div id="IoOverview">
+                <h3 class="body-header">Things that Are Not IO Boards</h3>
+                <span class="body-text">
+                    <p>
+                        There are a few devices in the chain going from the dance pads to the main IO board that are often mistaken for IO boards, but are actually there to make the IO board's job easier.
+                        These include the <strong>JAMMA PCB</strong> and <strong>stage PCBs</strong>.
+                    </p>
+                    <p>
+                        The <strong>JAMMA PCB</strong> is a board attached to the side of the MK PC hardware.
+                        It features seevral connectors of varying types, including Molex 5V/12V power, a large (typically blue) JAMMA slot which holds another PCB with several wires soldered on, multiple smaller connectors, and a few tactile buttons.
+                        This board is responsible for relaying the signals sent from the "pad IO"/"foot PCBs" to the actual PIUIO, as well as supplying power to the PIUIO and cabinet lights.
+                        The JAMMA PCB <strong>is not needed for a barebones, DIY setup</strong>, and is only required for everything to work properly in a full cabinet.
+                    </p>
+                    <p>
+                        The <strong>stage PCBs</strong>, also commonly called "pad IO PCBs" or "foot PCBs", can be found in both pads, underneath the top middle piece of metal between the red arrows.
+                        These are responsible for taking the dozens of wires required to connect every individual sensor and LED strip in the pad, and condensing them down to a more manageable handful of signals for the JAMMA board to pass to the PIUIO.
+                        These boards <strong>are not needed for a barebones, DIY setup</strong>, and are only used for the game to be able to poll and address each individual sensor and light in the pads.
+                    </p>
+                    <p>
+                        Earlier revisions of these boards feature a large socketed FPGA chip, while later revisions use smaller ICs. They are functionally identical, and will work even on the newest LX model pads.
+                    </p>
+                </span>
+            </div>
+
             <div>
                 <h2 class="body-header">Types of PIU I/O Boards</h2>
                 <span class="body-text">
