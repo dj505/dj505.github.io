@@ -131,6 +131,12 @@ div {
     font-size: 1em;
 }
 
+.figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
 .codebox {
     font-family: 'Source Code Pro', monospace;
     background-color: #1e222a;
