@@ -139,6 +139,7 @@ figure {
 
 figure img {
     vertical-align: top;
+    width: 200px;
 }
 
 figure figcaption {
@@ -147,6 +148,8 @@ figure figcaption {
     font-style: italic;
     text-align: center;
     caption-side: bottom;
+    margin-top: 8px;
+    width: 200px;
 }
 
 .codebox {
