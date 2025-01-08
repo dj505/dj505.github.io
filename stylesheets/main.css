@@ -146,6 +146,7 @@ figure figcaption {
     font-size: 0.7em;
     font-style: italic;
     text-align: center;
+    caption-side: bottom;
 }
 
 .codebox {
