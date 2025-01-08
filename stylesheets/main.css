@@ -148,7 +148,8 @@ figure figcaption {
     font-style: italic;
     text-align: center;
     caption-side: bottom;
-    margin-top: 8px;
+    margin: 8px 0px 0px 0px;
+    padding: 0;
     width: 200px;
 }
 
