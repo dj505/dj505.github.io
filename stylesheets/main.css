@@ -131,10 +131,21 @@ div {
     font-size: 1em;
 }
 
-.figcaption {
+figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-style: italic;
+    text-align: center;
 }
 
 .codebox {
