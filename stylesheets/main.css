@@ -28,7 +28,7 @@ p {
     margin-bottom: -5px;
 }
 
-p:first-child {
+p.first {
     margin-top: 0; 
 }
 
