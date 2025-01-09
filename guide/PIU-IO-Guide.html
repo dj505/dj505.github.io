@@ -129,6 +129,9 @@
                     </li>
                     <li>
                         <a href="#piuio_clone"><span class="attn-label">piuio_clone</span></a> <span class="label-blue">Custom/DIY</span>
+                    </li>PIUIO_Arduino
+                    <li>
+                        <a href="#PIUIO_Arduino"><span class="attn-label">PIUIO_Arduino</span></a> <span class="label-blue">Custom/DIY</span>
                     </li>
                 </ul>
             </div>
@@ -326,6 +329,35 @@
                     </p>
                     <p>
                         You can find the main repository for piuio_clone <a href="https://github.com/racerxdl/piuio_clone"><span class="attn-label">here</span></a>.
+                    </p>
+                </span>
+            </div>
+
+            <div id="PIUIO_Arduino">
+                <h3 class="body-header">PIUIO_Arduino</h3>
+                <span class="body-text">
+                    <p>
+                        <span class="label-blue">Compatibility:</span> Exceed 2 - Phoenix
+                    </p>
+                    <p>
+                        PIUIO_Arduino is another PIUIO clone firmware for the Arduino, but instead of supporting any ATMega328 chip with a USB cable soldered on, it uses the built-in USB port.
+                        This is possible because instead of the PIUIO code running on the ATMega328 itself, the firmware is instead flashed to the ATMega8u2/16u2, which is normally used as a "bridge" to program the ATMega328 over USB, which it doesn't natively support on its own.
+                        It also supports lighting, through the use of shift regisers.
+                    </p>
+                    <p>
+                        There are a couple downsides to this particular project that only really make it a feasible choice for anyone who might already have the right hardware laying around.
+                        You <strong>MUST</strong> have an Arduino that <strong>has an ATMega16u2 or 32u4</strong>.
+                        Most Arduino clones forgo this in favour of a cheaper non-programmable serial chip, and the Arduino Uno R4 uses a completely different MCU.
+                        The most common piece of compatible hardware that most people are likely to have on hand would be an <strong>official Uno R3</strong>.
+                    </p>
+                    <p>
+                        Because the hardware required is so specific, alongside the extra steps required to put the ATMega8u2/16u2 in DFU mode for reprogramming, I would recommend going with <a href="#piuio-pico">piuio-pico</a> if you don't already have the right hardware on hand.
+                    </p>
+                    <p>
+                        You can find the main repository for piuio_clone <a href="https://github.com/ckdur/PIUIO_Arduino"><span class="attn-label">here</span></a>.
+                    </p>
+                    <p>
+                        You can find a fork by <strong>48productions</strong>, with some extra documentation and a wiring diagram (in the "ArduinoPIUAux_Lights" directory) <a href="https://github.com/48productions/PIUIO_Arduino"><span class="attn-label">here</span></a>.
                     </p>
                 </span>
             </div>
