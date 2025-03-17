@@ -262,10 +262,10 @@ footer {
     a {
         text-decoration: none;
     }
-}
 
-div.footer {
-    margin-bottom: 0;
+    div {
+        margin-bottom: 0;
+    }
 }
 
 table td, table td {
