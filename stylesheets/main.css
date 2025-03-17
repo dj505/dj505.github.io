@@ -29,7 +29,7 @@ p {
 }
 
 p.first {
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 a:link {
@@ -262,6 +262,10 @@ footer {
     a {
         text-decoration: none;
     }
+}
+
+div.footer {
+    margin-bottom: 0;
 }
 
 table td, table td {
