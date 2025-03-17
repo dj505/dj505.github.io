@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PIU IO Guide | 5panel.dance</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Pump it Up IO Guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://5panel.dance" />
+        <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
+        <meta property="og:description" content="Information regarding official and custom Pump it Up IO boards." />
+        <meta name="theme-color" content="#61afef" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <script type="text/javascript" src="script/incl-html.js"></script>
+    </head>
+
+    <body>
+        <div class="back-to-top">
+            Quick Index<br/><br/>
+            <a href="#top">Back to Top</a><br/>
+            <a href="#the-mesh">The 5panel.dance Mesh</a><br/>
+            <a href="#edc">Everyday Carry Hardware</a><br/>
+            <a href="#homebase">Home Base Bot/BBS</a><br/>
+            <a href="#thecar">Willem DaFit (The Car)</a><br/>
+        </div>
+
+        <div class="content" id="top">
+            <a href="https://5panel.dance">
+                <h1 align="center" class="topper-h1">5panel.dance</h1>
+            </a>
+            <h2 align="center">↙️↖️⏺️↗️↘️</h2>
+
+            <p align="center"><a href="https://github.com/dj505">GitHub</a> • <a href="https://youtube.com/dj505itg">YouTube</a> • <a href="https://bsky.app/profile/5panel.dance">BlueSky</a> • <a href="https://discord.com/invite/ctMByBy">Discord</a> • <a href="https://ko-fi.com/dj505piu">Ko-Fi</a></p>
+
+            <br/>
+
+            <div class="info">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    Info
+                </h2>
+                <dl>
+                    <dt>This is a page about my personal Meshtastic mesh network setup!</dt>
+                    <dd>I read a post on Bluesky saying all the cool nerds had websites for their meshes. That's the only reason this page exists.</dd>
+                </dl>
+            </div>
+
+            <br/>
+
+            <div id="the-mesh">
+                <h2 class="body-header">The 5panel.dance Mesh</h2>
+                <span class="body-text">
+                    <p>
+                        I've got a few nodes set up here and there to serve different purposes, and I'll be talking about the hardware a little bit here!
+                        None of it is anything super fancy, but I think it's neat!
+                    </p>
+                    <p>
+                        Only a couple of my nodes have location information set, and they're all specific coordinates entered by hand with accuracy turned <strong>wayyyyy</strong> down for privacy reasons.
+                        Any maps my nodes may show up in do not reflect anywhere near their actual location, and are for extremely-vague-range-test-reference-number reasons only!
+                    </p>
+                </span>
+            </div>
+
+            <div id="edc">
+                <h2 class="body-header">Everyday Carry Hardware</h2>
+                <span class="body-text">
+                    <p>
+                        My primary EDC node is a super low-cost nRF52 <a href="https://github.com/gargomoma/fakeTec_pcb">fakeTec</a> node, based on a clone nice!nano MCU coupled with an SX1262 HT-RA62 module.
+                        It's got a GY-GPS6MV2 module for location and a rotary encoder for quickly firing off canned messages, all house in
+                        <a href="https://www.printables.com/model/1102989-faketec-nrf52-meshtastic-case-with-encoderbuzzergp">Timurey's modification</a> of
+                        <a href="https://www.printables.com/model/882598-heltec-lora32-v3-meshtastic-case-with-encoderbuzze">slabua's Heltec LoRa32 V3 case.</a>
+                        With the GPS disabled, it'll run roughly a week on battery power alone, using an 1100mAh battery from MakerFocus.
+                    </p>
+                    <p>
+                        This node tends to stay in my pocket or bag most of the time! While I'm at work I'll have it up high on a shelf for better reception.
+                    </p>
+                    <p>
+                        The antenna installed on this thing is weird. It's a REALLY good antenna, and I get far better reception with it than any other antenna I've bought, but I don't know where it's from!
+                        A friend of mine has an undle who was getting rid of a big ol' box of LoRa-spec antennas, and there were a few small articulating omnidirectional antennas in there that seemed like good fits.
+                        They were all unlabelled, but in good shape, and I figured it would be worth testing them out.
+                        After picking up a dozen new nodes I couldn't see before, as well as a handful of unexpected messages, I think it's fair to say they're pretty solid!
+                    </p>
+                </span>
+            </div>
+
+            <div id="homebase">
+                <h2 class="body-header">Home Base Bot/BBS</h2>
+                <span class="body-text">
+                    <p>
+                        At home, I keep a Heltec V3 running, hooked up to my PC at all times, connected to <a href="https://github.com/SpudGunMan/meshing-around">SpudGunMan's "MeshingAround" bot/BBS script.</a>
+                        This node serves a fully functional bulletin board where local users can submit and retrieve messages, play some basic text-based games, perform signal strength tests, check the weather, and more!
+                        Most of the script's original features are enabled, save for US-specific alert systems, and any AI functionality. Personally, not a fan, lol.
+                        It also provides data to the <a href="https://meshsense.affirmatech.com/">global MeshSense map!</a>
+                    </p>
+                    <p>
+                        This node is hooked up to the same kind of antenna my EDC node uses.
+                    </p>
+                </span>
+            </div>
+
+            <div id="thecar">
+                <h2 class="body-header">Willem DaFit (The Car)</h2>
+                <span class="body-text">
+                    <p>
+                        Willem DaFit is my car node - another Heltec V3 that currently lives inside my Honda Fit as a mobile base station.
+                        I have plans to install a solar panel and a proper antenna outside of the vehicle, but right now, it's just plugged into my head unit over USB and sits in one of those suction cup phone stands.
+                        It helps a ton when I'm on the go or at work, especially if I park higher up in a parkade or something where there's better reception.
+                    </p>
+                    <p>
+                        This node is currently hooked up to the same kind of antenna my EDC node uses.
+                    </p>
+                </span>
+            </div>
+
+            <div id="solar">
+                <h2 class="body-header">Solar Node</h2>
+                <span class="body-text">
+                    <p>
+                        I've been slowly but steadily putting together a solar node setup, with the most affordable parts I can find.
+                        It's still a major work in progress, so if you're reading this paragraph as-is, it's probably not totally accurate anymore!
+                        What I can say for certain won't change, though, is that the radio hardware is extremely similar to my <a href="#edc">EDC node.</a>
+                        It runs on an nRF52 <a href="https://github.com/gargomoma/fakeTec_pcb">fakeTec</a> and SX1262 HT-RA62 module combo again,
+                        with a BME280 temperature/humidity sensor, and <a href="https://www.aliexpress.com/item/1005006806330654.html">this particular cheap 5v regulated solar panel</a> from AliExpress.
+                        To keep it weatherproof, I used an SMA pigtail connector I had laying around which I previously bought by mistake for a portable node.
+                        The base was way too large to fit the shell, but that's because it has a rubber o-ring built in! Perfect for drilling into the side of a plastic box.
+                        However, for the next revision I'm moving to an N-female connector instead, which is a bit more fit for outdoor use.
+                    </p>
+                    <p>
+                        The antenna I plan to use with the new N-female connector is an ALFA AOA-915-5ACM, which I'm still waiting on as of writing this.
+                        However, it's currently using <a href="https://www.aliexpress.com/item/1005006833587735.html">this particular articulating antenna</a> I found on AliExpress.
+                        It's not amazing, and if you want a cheap antenna from AliExpress you're probably better off with a GIZONT whip antenna,
+                        but I made the (regrettable) decision to mount the SMA connector on the side of the box, forcing me to bend it up at a 90 degree angle.
+                    </p>
+                </span>
+            </div>
+
+        <footer>
+            <div incl-html="/include/footer.html"></div>
+        </footer>
+    </body>
+
+</html>
