@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PIUIO Driver Guide | 5panel.dance</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="PIUIO Driver Guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://5panel.dance" />
+        <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
+        <meta property="og:description" content="A multiplatform guide for controlling 3rd party software with your PIUIO." />
+        <meta name="theme-color" content="#61afef" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <script type="text/javascript" src="/script/incl-html.js"></script>
+    </head>
+
+    <body>
+        <div class="back-to-top">
+            Quick Index<br/><br/>
+            <a href="#top">Back to Top</a><br/>
+            <a href="#windows">Windows: IO2Key</a><br/>
+            <a href="#linux">Linux: PIUIO Kernel Module</a><br/>
+        </div>
+
+        <div class="content" id="top">
+            <a href="https://5panel.dance">
+                <h1 align="center" class="topper-h1">5panel.dance</h1>
+            </a>
+            <h2 align="center">↙️↖️⏺️↗️↘️</h2>
+
+            <p align="center"><a href="https://github.com/dj505">GitHub</a> • <a href="https://youtube.com/dj505itg">YouTube</a> • <a href="https://bsky.app/profile/5panel.dance">BlueSky</a> • <a href="https://discord.com/invite/ctMByBy">Discord</a> • <a href="https://ko-fi.com/dj505piu">Ko-Fi</a></p>
+
+            <br/>
+
+            <div class="info">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    Info
+                </h2>
+                <dl>
+                    <dt>This guide only covers PIUIO devices!</dt>
+                    <dd>Official PIUIO hardware as well as clones (i.e. <a href="https://github.com/48productions/piuio-pico">piuio-pico</a>) are supported. LXIO drivers are not covered here.</dd>
+                </dl>
+            </div>
+
+            <br/>
+
+            <div id="windows">
+                <h2 class="body-header">Windows: IO2Key</h2>
+                <span class="body-text">
+                    <p>
+                        <h3 class="subheader">Required Software</h3>
+                        You will need:
+                        <ul>
+                            <li>Zadig, for installing device drivers: <a href="https://zadig.akeo.ie/">Official Site</a></li>
+                            <li>IO2Key, to translate PIUIO inputs: <a href="https://drive.google.com/drive/folders/15spzLamdKFYLKFodT8WF6V9wBu-WKCxH">Pre-compiled Mirror</a> / <a href="https://github.com/ckdur/piuio2key">Source Code</a></li>
+                            <li>Visual C++ Redistributable Packages for Visual Studio 2013, only necessary if you get any missing DLL errors: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">Official Site</a></li>
+                        </ul>
+                        IO2Key mirror provided by Nirvash. Thank u Nirvash!
+                    </p>
+                    <p>
+                        <h3 class="subheader">Installation</h3>
+                        Here are the basic steps for getting everything up and running:
+                        <ol>
+                            <li>Open up Zadig and plug in your PIUIO device.</li>
+                            <li>From the top dropdown, select the PIUIO. It should be listed as "EZ-USB FX2" or similar. If you're unsure, relaunch zadig without it plugged in and see what option disappears!</li>
+                            <li>There will be two boxes in the "Driver" section, separated by an arrow. On the <strong>right side,</strong> make sure "libusb-win32" is selected.</li>
+                            <li>Hit the install button and wait for the process to finish! This may take quite a long time in some cases. Enjoy the silly progress messages!</li>
+                            <li>If the driver installation fails, or does not persist between reboots, you may need to <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/the-testsigning-boot-configuration-option">enable test signing mode in Windows.</a></li>
+                            <li>Reboot your PC!</li>
+                            <li>Unzip the IO2Key archive. Doesn't paricularly matter where, but I'd recommend putting it somewhere other than your Downloads folder, so it doesn't get mistakenly deleted.</li>
+                            <li>Navigate to where you extracted the archive and run <span id="attn-label">IO2Key.exe</span>.</li>
+                            <li>You should now see a little pad icon in your system tray at the bottom right of your taskbar, with no popups. <strong>If this is the case, great! You're ready to use your PIUIO!</strong> If you get an error message saying that there is no PIUIO detected, skip to the troubleshooting section.</li>
+                        </ol>
+
+                        <h3 class="subheader">Usage</h3>
+                        <ul>
+                            <li>Your pad/controller inputs will now be output as QESZC for player 1, or 79513 for player 2. Make sure you map these in the controller or keymap settings in whichever game you're playing!</li>
+                            <li>IO2Key has a diagnostics window built in for testing your inputs! Locate the little pad icon in your system tray, at the far end of your taskbar. Right click it to see the available options!</li>
+                            <li>Once you're done, right click the icon in the system tray and select the "Exit" option. Unplugging the PIUIO will cause it to hang and you'll have to fiddle around with task manager to close it and stuff and it's annoying.</li>
+                        </ul>
+
+                        <h3 class="subheader">Troubleshooting</h3>
+                        If you're here, you probably got a popup exclaiming that the program did not detect your PIUIO. Here are some things you can try to fix that:
+                        <ul>
+                            <li>Open up the device manager and locate the PIUIO. If you can't find it, unplug it and plug it back in to see which item disappears and reappears. Right click it, uninstall the driver, and then reinstall the libusb-win32 driver with Zadig.</li>
+                            <li>Check your USB cable. Some cables are charge-only and don't do data transfer. If you swapped cables between install and testing, this could be the case.</li>
+                            <li>Reboot your PC! Sometimes turning it off and on again is all it takes. Especially if you skipped that step in the installation section.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h3 class="subheader">Bonus: Using the Buttonboard!</h3>
+                        This section is under construction! For now, check out <a href="https://www.youtube.com/watch?v=mdVS8scq0B4">Nrivash's video guide.</a>
+                    </p>
+                </span>
+            </div>
+
+            <div id="linux">
+                <h2 class="body-header">Linux: PIUIO Kernel Driver</h2>
+                <span class="body-text">
+                    <p>
+                        <h3 class="subheader">Required Software</h3>
+                        You will need:
+                        <ul>
+                            <li>din's fork of djpholy's PIUIO kernel module: <a href="https://github.com/DinsFire64/piuio">Source Code</a></li>
+                        </ul>
+                        That's all!
+                    </p>
+                    <p>
+                        <h3 class="subheader">Installation</h3>
+                        This guide assumes you're building and installing the module directly on the instance you will be using to play your games. If this is not the case, the <a href="https://github.com/DinsFire64/piuio?tab=readme-ov-file#compiling-and-installing">README</a> has extra details!<br />
+                        Here are the basic steps for getting everything up and running, with terminal commands provided for your copy/paste convenience:
+                        <ol>
+                            <li>Install gcc: <span class="attn-label">sudo apt install gcc</span> (Debian) / <span class="attn-label">sudo pacman -S gcc</span> (Arch)</li>
+                            <li>Download and extract the source code for the kernel module to <span class="attn-label">~/piuio</span>, or clone the repo: <span class="attn-label">git clone https://github.com/DinsFire64/piuio ~/piuio</span></li>
+                            <li>Navigate to the "mod" directory: <span class="attn-label">cd ~/piuio/mod</span></li>
+                            <li>Run "make": <span class="attn-label">make</span></li>
+                            <li>Install the compiled module: <span class="attn-label">sudo make install</span></li>
+                            <li>You may encounter an error related to SSL stuff. You can safely ignore this! It's only important if you're trying to build a cryptographically signed module.</li>
+                            <li>Reboot your PC!</li>
+                        </ol>
+
+                        <h3 class="subheader">Usage</h3>
+                        <ul>
+                            <li>Your pad/controller inputs should now be recognized as a generic joystick device, which you can map under the controller settings in-game!</li>
+                            <li>If using StepMania, navigate to Preferences.ini and set the lighting device to "PIUIO" for fancy cab lights support, if you have the hardware for it! This will work for official cabhinets, and PicoFX/PicoLX controllers at minimum.</li>
+                        </ul>
+
+                        <h3 class="subheader">Troubleshooting</h3>
+                        Sometimes Linux will be Linux and you'll run into some issues for no apparent reason. Here's what you can try:
+                        <ul>
+                            <li>Search for the PIUIO module to ensure it actually installed: <span class="attn-label">find /lib/modules -name 'piuio*'</span></li>
+                            <li>If the search turns up nothing, reboot and redo the installation.</li>
+                            <li>See if the PIUIO module info exists and can be found: <span class="attn-label">modinfo piuio</span></li>
+                            <li>If the module cannot be found, run the <span class="attn-label">depmod</span> command to "rescan" installed modules and hopefully help the system find it.</li>
+                            <li>Attempt to run <span class="attn-label">modinfo piuio</span> again to see if the module is recognized. If so, great! Run <span class="attn-label">modprobe piuio</span> to add the module to the kernel, followed by <span class="attn-label">lsmod | grep piuio</span> to ensure the module was properly loaded.</li>
+                            <li>If all else fails, double check the key bindings in whichever game you're playing! It's an easy step to miss!</li>
+                        </ul>
+                    </p>
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer" incl-html="/include/footer.html"></div>
+        </footer>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+
+</html>

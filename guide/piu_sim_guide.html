@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PIU Simulator Guide | 5panel.dance</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Pump it Up Simulator Guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://5panel.dance" />
+        <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
+        <meta property="og:description" content="Trying to figure out which simulator is right for you? Start here!" />
+        <meta name="theme-color" content="#61afef" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <script type="text/javascript" src="/script/incl-html.js"></script>
+    </head>
+
+    <body>
+        <div class="back-to-top">
+            Quick Index<br/><br/>
+            <a href="#top">Back to Top</a><br/>
+            <a href="#Simulators">Simulators</a><br/>
+            <a href="#SimList">Simulator List</a><br/>
+            <a href="#Simfiles">Simfiles</a>
+        </div>
+
+        <div class="content" id="top">
+            <a href="https://5panel.dance">
+                <h1 align="center" class="topper-h1">5panel.dance</h1>
+            </a>
+            <h2 align="center">↙️↖️⏺️↗️↘️</h2>
+
+            <p align="center"><a href="https://github.com/dj505">GitHub</a> • <a href="https://youtube.com/dj505itg">YouTube</a> • <a href="https://bsky.app/profile/5panel.dance">BlueSky</a> • <a href="https://discord.com/invite/ctMByBy">Discord</a> • <a href="https://ko-fi.com/dj505piu">Ko-Fi</a></p>
+
+            <br/>
+
+            <div class="info">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    Info
+                </h2>
+                <dl>
+                    <dt>This page is a work in progress!</dt>
+                    <dd>Information here is subject to change. If you find inaccuracies or have suggestions, <a href="#Contact">contact me!</a></dd>
+                    <br/>
+                    <dt>"Simulator" vs. "Emulator"</dt>
+                    <dd>Simulators recreate an experience from scratch using original code (eg. StepMania); emulators run the original code on platforms it was not made for (eg. running <em>PIU Exceed</em> PS2 in PCSX2)</dd>
+                </dl>
+            </div>
+
+            <br/>
+
+            <div>
+                <h2 class="body-header">Page Directory</h1>
+                <!-- Ugly formatting is necessary here to preserve the whitespace because I don't wanna fill it with &nbsps -->
+                <p class="codebox">
+<a href="https://5panel.dance">5panel.dance/</a><br/>
+└── guide/<br/>
+    └── Pump it Up Simulator Guide<br/>
+        ├── <a href="#Simulators">Simulators</a><br/>
+        └── <a href="#Simfiles">Simfiles</a>
+                </p>
+            </div>
+
+            <br/>
+
+            <div id="Simulators">
+                <h2 class="body-header">What Is a Simulator, and What Does it Do?</h2>
+                <span class="body-text">
+                    <p>
+                        In terms of rhythm games, a <strong>simulator</strong> is a program that <strong>simulates</strong> the gameplay loop and mechanics of a given game.
+                        Simulators are generally free to play, and can either look entirely unique, or can visually resemble the game they're made to simulate.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">Drawbacks of Using a Simulator</h2>
+                <span class="body-text">
+                    <p>
+                        Simulators are built from the ground up to resemble the gameplay and mirror the core mechanics of a particular game.
+                        They're rarely (if ever) perfect, and most have noticeable flaws that can detract from the experience. <strong>This is true of all simulators.</strong>
+                    </p>
+                    <p>
+                        When it comes to <em>Pump it Up</em> simulators specifically, the question of chart accuracy also comes into play. Most charts <strong>from 1st Dance Floor</strong> up to and <strong>including PRIME 2015</strong> are <strong>decrypts</strong>.
+                        Decrypt charts are near identical to the originals, as they were converted to a simfile format from decrypted data originating from the official game. Everything <strong>including and after PRIME 2 2017</strong> are <strong>recreations</strong> made by hand.
+                    </p>
+                    <p>
+                        I'll go into more detail regarding simfiles, as well as particular pros and cons for each commonly used simulator, further down this page.
+                    </p>
+                    <h3>Remember:</h3>
+                    <p>
+                        Simulators aren't a replacement for official titles! <strong>Support Andamiro, and <span class="rainbow-text">support PUMP IT UP!</span></strong>
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">Some Terminology</h2>
+                <span class="body-text">
+                    <p>
+                        You might see some terms that you may not already be familiar with later on down this page. Here are a couple and what they mean!
+                    </p>
+                    <p>
+                      <span class="attn-label">Simfile</span>: A file containing chart data for a simulator. Generally also used to refer to a complete bundle including audio and graphics.<br/>
+                      <span class="attn-label">SSC</span>: The most widespread simfile format for Pump-style charts, made standard by StepMania 5. Modern simulators tend to use a slightly modified version.<br/>
+                      <span class="attn-label">BGA</span>: Short for "Background Animation", refers to videos or sequences that display in the background during gameplay.<br/>
+                    </p>
+                </span>
+            </div>
+
+            <br/>
+
+            <div class="warn">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Disclosure
+                </h2>
+                <dl>
+                    <dt>Affiliation & Bias</dt>
+                    <dd>
+                        There are projects in this list that I am affiliated with, and there may be cases where my own personal experiences with particular projects and/or the people behind them may influence my feedback.
+                        I will do my best to make these cases clear for each entry, and highlight where those biases may be present.
+                        Only factual information will be listed in the pros and cons for each entry.
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="SimList">
+                <h2 class="body-header">Noteworthy Simulators</h2>
+                <span class="body-text">
+                    <p>
+                        There are a ton of simulators out there, and it can get confusing.
+                        Here's a (roughly) chronological list of modern, commonly used ones that you'll see mentioned frequently online. Every one has different quirks and features, which I'll be covering later.
+                    </p>
+                    <h3><strong>Legend:</strong></h3>
+                    <p class="legend">
+                        <span class="label-green">Recommended</span>: Holds up for modern day use. Works with most content released today, or still has content being frequently released specifically for it. Recommend comparing with others that have this tag.<br/>
+                        <span class="label-blue">Maintained</span>: Actively receiving bug fixes, features, or other improvements/updates.<br/>
+                        <span class="label-purple">Unique</span>: A fun, standalone option that can <em>play</em> Pump charts without issue, but is otherwise its own thing.<br/>
+                        <span class="label-red">Deprecated</span>: No longer in development, and succeeded by a different program from the same developer or team.<br/>
+                        <span class="label-orange">Not Recommended</span>: Works, but not very well. Buggy and/or inaccurate to the game's mechanics.<br/>
+                        <span class="label-orange">Discontinued</span>: No longer in development, with no successor from the same developer or team.<br/>
+                        <span class="label-orange">Unmaintained</span>: Not in active development, but not officially discontinued. May still eventually be updated.<br/>
+                    </p>
+                    <p>
+                        Click any of the following to jump to its section:
+                    </p>
+                </span>
+
+                <ul>
+                    <li><a href="#StepMania"><span class="attn-label">StepMania</span></a> <span class="label-orange">Not Recommended</span><br/>
+                    The original dance game simulator. Simulates many different games.</li>
+
+                    <li><a href="#StepF2"><span class="attn-label">StepF2</span></a> <span class="label-red">Deprecated</span><br/>
+                    The first to accurately recreate a somewhat modern PIU experience. Developed by xMAx.</li>
+
+                    <li><a href="#StepPrime"><span class="attn-label">StepPrime</span></a> <span class="label-red">Deprecated</span><br/>
+                    The first public simulator themed after <em>Pump it Up: PRIME 2015</em>. Developed by the late PumpSanity team.</li>
+
+                    <li><a href="#Infinitesimal"<span class="attn-label">Infinitesimal</span></a> <span class="label-blue">Maintained</span> <span class="label-green">Recommended</span><br/>
+                    An original theme inspired by <em>Pump it Up: Infinity</em>. Uses the Project OutFox engine. Developed by Team Infinitesimal.</li>
+
+                    <li><a href="#StepP1"><span class="attn-label">StepP1</span></a> <span class="label-orange">Discontinued</span> <span class="label-green">Recommended</span><br/>
+                    The official successor to StepF2, themed after <em>Pump it Up: PRIME 2015</em>. Developed by xMAx.</li>
+
+                    <li><a href="#StepPXX"><span class="attn-label">StepPXX</span></a> <span class="label-red">Deprecated</span><br/>
+                    The successor to StepPrime. Themed after <em>Pump it Up: XX 20th Anniversary Edition</em>. Developed by the late PumpSanity team.</li>
+
+                    <li><a href="#PumpSanity"><span class="attn-label">PumpSanity</span></a> <span class="label-orange">Discontinued</span> <span class="label-orange">Not Recommended</span><br/>
+                    The successor to StepPXX. Includes <em>Pump it Up: PRIME 2015</em> and <em>XX</em> themes, plus an original theme. Developed by the late PumpSanity team.</li>
+
+                    <li><a href="#StepP1+"><span class="attn-label">StepP1+</span></a> <span class="label-blue">Maintained</span> <span class="label-green">Recommended</span><br/>
+                    A decrypted and community-maintained spinoff of StepP1. Includes <em>Pump it Up: Phoenix</em> scoring and other QoL improvements. Developed by rayden-61.</li>
+
+                    <li><a href="#piured"><span class="attn-label">piured</span></a> <span class="label-blue">Maintained</span> <span class="label-green">Recommended</span><br/>
+                    A web-based simulator, one of the few on this list that is not based on StepMania. Requires a WebGL-compatible browser. Developed by piulin.</li>
+
+                    <li><a href="#piuGBA"><span class="attn-label">piuGBA</span></a> <span class="label-blue">Maintained</span> <span class="label-purple">Unique</span><br/>
+                    A Pump simulator written from scratch for the GameBoy Advance. Works in emulators and on real hardware. Developed by afska.</li>
+
+                    <li><a href="#RaveItOut"><span class="attn-label">Rave It Out</span></a> <span class="label-orange">Unmaintained</span> <span class="label-purple">Unique</span><br/>
+                    A standalone, 5 panel dance game with a unique aesthetic, tighter timing, and a focus on pop music. Developed by the Rave it Out team.</li>
+
+                    <li><a href="#FiveSteps"><span class="attn-label">FiveSteps</span></a> <span class="label-purple">Unique</span><br/>
+                    A Pump simulator for Android devices! Supports StepF2/StepP1 simfiles, online leaderboards, and other neat features.</li>
+
+                    <br/>
+
+                    <li><a href="#CurrentRec"><span class="attn-label">Jump to the Current Top Recommendation</a></li>
+                </ul>
+            </div>
+
+            <div id="StepMania">
+                <h2 class="body-header">StepMania</h2>
+                <p><span class="label-orange">Not Recommended</span></p>
+                <p>
+                    StepMania was released in 2001 as a simulator for Konami's <em>Dance Dance Revolution</em> games. Over time, the codebase was expanded to add support for other gamemodes, including Pump.
+                    Every other simulator listed below is built on top of some version of StepMania 5.x, with extremely thorough and heavy-handed changes to fix bugs, issues, and inaccuracies, as well as to add features not present in the base StepMania 5.x engine.
+                </p>
+                <p>
+                    Base StepMania (versions 4.x through 5.x) are <strong>not recommended</strong> for Pump simulation due to:
+                </p>
+                <ul>
+                    <li>Issues with hold notes and ticks not being counted or scored correctly;</li>
+                    <li>Incorrect hold note mechanics, where hold heds are subject to full tap note timing windows instead of just Perfect or Miss;</li>
+                    <li>Incorrect hold note mechanics, where hold heads cannot be held before reaching the receptors to count as a Perfect;</li>
+                    <li>A lack of accurate timing window scales;</li>
+                    <li>A lack of accurate lifebar mechanics;</li>
+                    <li>A lack of support for special notetypes widely used in Pump charts for visual effects, etc;</li>
+                    <li>An overall lack of maintainence regarding the "pump" gamemode, with no updates or fixes in a very long time</li>
+                </ul>
+                <p>
+                    While custom charts made with these mechanics in mind do exist, they are exceptiomally rare, and the vast majority of players are not looking for this playstyle.
+                    <strong>Chart files made for other StepMania-based simulators will technically play</strong> in this engine, but <strong>they will not work correctly.</strong>
+                    <strong>Most official chart conversions are not playable</strong> on this engine.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Free</li>
+                        <li>Open source</li>
+                        <li>Large community</li>
+                        <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Will not work properly for the majority of Pump content</li>
+                        <li>Essential mechanics are either entirely missing, or are not accurate to Pump</li>
+                        <li>Zero meaningful maintenance, fixes, or improvements for the "pump" engine in years</li>
+                        <li>Does not support PIUIO or cabinet lights, needs 3rd party driver to translate PIUIO to keyboard</li>
+                        <li>Cannot play PumpSanity simfiles</em>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows, Linux, Mac (<10.15)
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://www.stepmania.com/download" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="StepF2">
+                <h2 class="body-header">StepF2</h2>
+                <p><span class="label-red">Deprecated</span></p>
+                <p>
+                    StepF2 is the first major modern Pump simulator to have been released.
+                    It is an accurate recreation of <em>Pump it Up: Fiesta 2</em>, using decrypted graphics and audio ripped from the official game.
+                    For many years, it was the most popular and widely used simulator available, and it defined the chart format still used by most modern simulators today.
+                    You basically have StepF2 to thank for the existence of most other modern simulators and content!
+                </p>
+                <p>
+                    StepF2 is <strong>playable</strong>, performs well, and still holds up, but is <strong>deprecated</strong>, as it has been surpassed by <a href="#StepP1">StepP1</a> (which has, in turn, been surpassed by <a href="#StepP1+">StepP1+</a>).
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Widespread content</li>
+                        <li>Includes official content up to PRIME 2015</li>
+                        <li>Large community</li>
+                        <li>Accurate mechanics and features up to PRIME 2015</li>
+                        <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Somewhat dated, if that bothers you</li>
+                        <li>UI may be slightly confusing for players used to <em>Pump it Up: XX</em> or newer</li>
+                        <li>Missing adjustable AutoVelocity (AV)</li>
+                        <li>Hold timing is slightly more lenient than arcade</li>
+                        <li>Missing modern Phoenix-style scoring</li>
+                        <li>Does not support PIUIO or cabinet lights, needs 3rd party driver to translate PIUIO to keyboard</li>
+                        <li>Cannot play PumpSanity simfiles</em>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows
+                </p>
+                <p>
+                    <span class="download-btn"><a href="http://stepf2.blogspot.com/p/downloads_27.html" target="_blank">Download</a></span><br/>
+                    <em>StepF2 is bundled with StepP1 as its own executable.</em>
+                </p>
+            </div>
+
+            <div id="StepPrime">
+                <h2 class="body-header">StepPrime</h2>
+                <p><span class="label-red">Deprecated</span></p>
+                <p>
+                    StepPrime is weird. There are a lot of rumors to how this one started and where it originated. There are a lot of different projects that called themselves "StepPrime" and the history is really muddled. This will be <strong>focusing on the StepPrime released by the late PumpSanity team.</strong>
+                </p>
+                <p>
+                    I don't know if StepPrime ever made it past the early alpha stage, but from my experience, it was very buggy and incomplete, though it's been long enough that I don't remember the specifics.
+                    It was functional, but definitely not the ideal experience. Most people I've talked to who tried it had a similar experience.
+                    It's easy enough to find references to it floating around the internet that I figure it's worth a mention in this list, but it's not worth seeking out.
+                    If you like the PRIME 2015 look, check out <a href="#StepP1">StepP1</a> or <a href="#StepP1+">StepP1+</a>.
+                </p>
+                <p>
+                    StepPrime is <strong>deprecated</strong> and succeeded by <a href="#StepPXX">StepPXX</a>.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>It looks like <em>Pump it Up: PRIME 2015</em>, if you're into that</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Probably never made it past early alpha</li>
+                        <li>Multiple sources agree it was buggy and incomplete</li>
+                        <li>Missing adjustable AutoVelocity</li>
+                        <li>Very bootleggy</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows
+                </p>
+            </div>
+
+            <div id="Infinitesimal">
+                <h2 class="body-header">Infinitesimal</h2>
+                <p><span class="label-blue">Maintained</span> <span class="label-green">Recommended</span></p>
+                <p>
+                    Infinitesimal is a theme for the <a href="https://projectoutfox.com/" target="_blank">Project OutFox</a> engine, formerly known as StepMania 5.3.
+                    The visual style is inspired heavily by <em>Pump it Up: Infinity</em>, and the base game itself does not include any <em>Pump it Up</em> branding or copyrighted content.
+                    I started developing Infinitesimal in May of 2020.
+                    It gained traction over time as more contributors jumped on board, and as OutFox improved the "pump" gamemode engine, ironing out bugs and implementing new features.
+                </p>
+                <p>
+                    For a while, OutFox was not as viable for Pump simulation due to long-standing problems with StepF2-style warps and issues with hold notes.
+                    As of November 28, 2024, the latest Alpha V test build fixed these issues.
+                    Warps and effects in charts like Conflict S22 will no longer instantly kill you, combos are counted accurately throughout effects, and most (if not all) charts previously considered unplayably work flawlessly.
+                    Accuracy will improve with time too, given this software is only in the alpha stage, and Infinitesimal will be bundled directly with future OutFox releases.
+                </p>
+                <p>
+                    The project aims to recreate as much Pump functionality as possible plus tons of extra goodies, including but not limited to:
+                </p>
+                <ul>
+                    <li>Arcade-accurate, asymmetrical timing</li>
+                    <li>All timing window options available in PIU, plus extras</li>
+                    <li>Arcade-accurate lifebar with overflow</li>
+                    <li>Several types of speed mods, including arcade-accurate AV</li>
+                    <li>Options for classic or Phoenix-style scoring, letter grades & plates</li>
+                    <li>Chart previews on the difficulty select menu</li>
+                    <li>Options for experienced players (visualize lifebar overflow, accuracy, etc)
+                    <li>All original UI/menu graphics and music</li>
+                    <li>USB profile support</li>
+                    <li>Pay mode support for fully legal public use (assuming you have the license or permission to use any added songs)</li>
+                </ul>
+                <p>
+                    Infinitesimal is <strong>recommended</strong> and <strong>actively maintained</strong>.
+                </p>
+                <p>
+                    <strong>Disclosure:</strong> I am the lead developer and designer behind Infinitesimal and have considerably involvement in the project.
+                    However, many major features were implemented by knowledgeable contributors, without whom it would not exist the way it does today!
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Arcade accurate timing, lifebar, and scoring</li>
+                        <li>Options for Phoenix scoring, grades & plates</li>
+                        <li>Extra functionality for pros, or players who like seeing extra stats</li>
+                        <li>Compatible with most (if not all) StepF2/StepP1 charts (custom & official)</li>
+                        <li>Completely original graphics/music, not legally dubious</li>
+                        <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                        <li>Multiplatform - supports Max and Linux, as well as ARM hardware</li>
+                        <li>Recent updates with several fixes mean that accuracy is at least on par with <a href="#StepP1+">StepP1+<a></a></li>
+                        <li>Natively support for PIUIO/LXIO input devices means it's a nearly drop-in replacement on modern cabs</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Setup is more involved than other simulators</li>
+                        <li>Engine is still in alpha, needs to be updated often</li>
+                        <li>Updates can sometimes cause weird crashes or bugs</li>
+                        <li>Some features are constrained by engine limitations</li>
+                        <li>OutFox's "pump" mode engine is incomplete and has some minor issues</li>
+                        <li>OutFox's "pump" mode engine does not yet support some visual effects found in many official songs</li>
+                        <li>Cannot play PumpSanity simfiles</em>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows, Linux, Mac
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://github.com/Team-Infinitesimal/Infinitesimal" target="_blank">Download</a></span><br/>
+                    <em>Infinitesimal requires the Project OutFox Alpha V engine.</em>
+                </p>
+            </div>
+
+            <div id="StepP1">
+                <h2 class="body-header">StepP1</h2>
+                <p><span class="label-red">Deprecated</span> <span class="label-green">Recommended</span></p>
+                <p>
+                    StepP1 is the official successor to <a href="#StepF2">StepF2</a>.
+                    It is a mostly accurate recreation of <em>Pump it Up: PRIME 2015</em>, using decrypted graphics and audio ripped from the official game.
+                    StepP1 was never fully completed and lacks features like basic mode, but being a continuation of StepF2's already rock solid engine, it holds up well and gameplay is very accurate.
+                    It only received one release, and is no longer being developed or maintained. There will be no future updates released by the original developer.
+                </p>
+                <p>
+                    StepP1 is <strong>very playable</strong>, performs well, and holds up great, but is <strong>discontinued</strong>, as it has been improved upon with <a href="#StepP1+">StepP1+</a>.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Widespread content</li>
+                        <li>Includes official content up to PRIME 2015</li>
+                        <li>Large community</li>
+                        <li>Accurate mechanics and features up to PRIME 2 2017</li>
+                        <li>Includes PRIME 2-style adjustable AutoVelocity</li>
+                        <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Stuck with any issues it currently has, due to being discontinued</li>
+                        <li>Hold note timing is slightly more lenient than arcade</li>
+                        <li>Missing modern Phoenix-style scoring</li>
+                        <li>Does not support PIUIO or cabinet lights, needs 3rd party driver to translate PIUIO to keyboard</li>
+                        <li>Cannot play PumpSanity simfiles</em>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows
+                </p>
+                <p>
+                    <span class="download-btn"><a href="http://stepf2.blogspot.com/p/downloads_27.html" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="StepPXX">
+                <h2 class="body-header">StepPXX</h2>
+                <p><span class="label-red">Deprecated</span></p>
+                <p>
+                    StepPXX is the successor to <a href="#StepPrime">StepPrime</a>, developed by the late PumpSanity team, made to resemble <em>Pump it Up: XX 20th Anniversary Edition</em>.
+                    Not to be confused with StepXX, a different simulator also meant to resemble <em>Pump it Up: XX</em>, but never made it past extremely early development and was never quite playable.
+                    <em>Pump it Up: XX</em> has not been decrypted, and the graphics used are a mix of hand recreations and cropped sections from other media.
+                    Many sound effects and menu tracks don't quite line up, or suffer from poor audio quality.
+                </p>
+                <p>
+                    StepPXX received infrequent updates and never really made it past the "early preview" stage, with a permanent watermark on the upper left corner.
+                    There were some attempts to implement an online matching feature, but it seems they were limited to a private build that was only distributed selectively, and I'm not sure it got a public release.
+                    StepPXX introduced a <strong>new simfile format</strong>, which accounted for some new modifiers that StepP1 did not support, but which rarely see widespread use.
+                    This new simfile format is an SSC versoin that is <strong>not compatible with StepP1</strong> or any simulators made to use StepP1 simfiles, which pushed StepPXX simfiles into their own separate branch of the simulator community,
+                    starting a content accessibility divide that is still present today. Performance is also subpar on lower end machines, due to the security and encryption features present.
+                </p>
+                <p>
+                    This was the first widespread simulator to include support for Mission or Quest zones from older mainline <em>Pump it Up</em> games,
+                    including the mission zones from <em>Pump it Up: Infinity</em> and <em>Fiesta EX</em>, and WorldMax from <em>Pump it Up NXA</em>.
+                </p>
+                <p>
+                    Unlike other simulators themed around official releases, <em>Pump it Up: XX</em> was still actively supported and sold by Andamiro during the time of this project's release.
+                    Many freeplay arcades opted to install this software instead of purchasing a legitimate kit.
+                </p>
+                <p>
+                    StepPXX is <strong>deprecated</strong> and succeeded by <a href="#PumpSanity">PumpSanity</a>.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>The first simulator to be themed after <em>Pump it Up: XX</em></li>
+                        <li>Compatible with StepPXX simfiles (kinda goes without saying really)</li>
+                        <li>Somewhat widespread use, due to the novelty of looking like <em>Pump it Up: XX</em></li>
+                        <li>Includes most modifiers present in the <em>Pump it Up: XX</em> command window</li>
+                        <li>Includes recreations of mission zones from previous <em>Pump it Up</em> titles</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Hold notes are buggy and can cause seemingly random combo breaks</li>
+                        <li>Hold release timing is extremely strict and inaccurate</li>
+                        <li>Hold tick calculation is inaccurate</li>
+                        <li>Missing modern Phoenix-style scoring</li>
+                        <li>Security implementation is rather heavy, performace is poor on MK9 arcade hardware</li>
+                        <li>Extremely bootleggy, distributing a recreation of a current and supported game for free upon release</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows
+                </p>
+            </div>
+
+            <div id="PumpSanity">
+                <h2 class="body-header">PumpSanity</h2>
+                <p><span class="label-orange">Discontinued</span> <span class="label-orange">Not Recommended</span></p>
+                <p>
+                    Oh boy, this one's got some history. Buckle up.
+                </p>
+                <p>
+                    PumpSanity is the successor to <a href="#StepPXX">StepPXX</a>, developed by the late PumpSanity team.
+                    Its main attraction is the new "original" PumpSanity theme, which is primarily a reskin of the Prime theme with some extras added on.
+                    It also includes options for <em>Pump it Up: PRIME 2015</em> and <em>XX: 20th Anniversary Edition</em> themes, recycled from StepPrime and StepPXX respectively, with some fixes and improvements.
+                </p>
+                <p>
+                    PumpSanity received infrequent updates, and some content was <strong>paywalled behind their Patreon page</strong>.
+                    One big selling point for PumpSanity was its online matching feature, which differed from StepPXX's implementation by working via Discord integration, and requiring the player to be present in the official PumpSanity discord server to work.
+                    This feature no longer functions, and <strong>will cause the game to crash</strong> after finishing a song unless the player either closes Discord or blocks the application in the Windows Firewall settings.
+                    PumpSanity also continued and expanded upon their <strong>new simfile format</strong>, further branching off from StepF2's long-standing standard and widening the content accessibility divide; any charts made for PumpSanity will not function correctly in any other simulator.
+                </p>
+                <p>
+                    Much of the game's built-in content was taken from the <a href="#StepF2">StepF2</a>/<a href="#StepP1">StepP1</a> projects and redistributed with minor changes to fit the new engine.
+                    Other content was used without permission, such as simfile transcriptions (which I personally contributed to) meant to preserve the rare <em>Pump it Up: The Fusion Sega Genesis</em> port, and no credit was given to the original authors.
+                </p>
+                <p>
+                    PumpSanity's use of copyrighted <em>Pump it Up</em> intellectual property became an issue when it was discovered that the <em>Pump it Up: Infinity</em> mission zone recreation was actually a near exact copy/paste
+                    of the actual mission zone code and graphical assets from a previously leaked development build. This led to a request issued by Team Infinity to remove any and all <em>Pump it Up</em> branding and intellectual property from the game, on behalf of Andamiro.
+                    The team was given the option to continue the PumpSanity project without this content, but they decided instead to discontinue the project of their own volition.
+                    There was originally planned to be a Linux-compatible build, including Phoenix scoring, but this would never be released.
+                </p>
+                <p>
+                    <strong>Disclosure:</strong> I have had multiple personal run-ins with a member of the development team that were not positive, where past criticisms I made (i.e. describing inaccuracies, versus other inaccuracies in other simulators for the sake of comparison) were misinterpreted.
+                    More than once, I was pinged by this person in a private mutual Discord server with long-winded berating messages, phrased in such a way as to suggest that I was intentionally slandering or spreading misinformation about this project, which was not my intention.
+                    As a result, I am biased against using this project myself, and cannot in good faith recommend it to others.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Has a song search function, useful for large libraries</li>
+                        <li>Can recreate missions/quests a little more accurately</li>
+                        <li>Has an extra "rainbow Perfect" timing window</li>
+                        <li>The only accessible way to play StepPXX and PumpSanity simfiles</li>
+                        <li>Somewhat widespread use, due to the closed ecosystem of content & <em>Pump it Up: XX</em> theme</li>
+                        <li>Includes most modifiers present in the <em>Pump it Up: XX</em> command window</li>
+                        <li>Includes recreations of mission zones from previous <em>Pump it Up</em> titles</li>
+                        <li>Natively supports PIUIO</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>The game crashes after every song if Discord is open, unless you block it via Windows Firewall settings</li>
+                        <li>Hold notes are buggy and can cause seemingly random combo breaks</li>
+                        <li>Hold release timing is extremely inaccurate, though better than StepPXX</li>
+                        <li>Hold tick calculation is inaccurate</li>
+                        <li>Public builds are missing modern Phoenix-style scoring</li>
+                        <li>Includes content that was taken without author permission or credit</li>
+                        <li>Content exists in a closed ecosystem and locks out other established simulators</em>
+                        <li>Encryption and copy protection is rather heavy, performace is poor on MK9 arcade hardware</li>
+                        <li>May be a potential security risk due to janky and unmtained proprietary software integrations</li>
+                        <li>Extremely bootleggy, to the point where a takedown request was issued</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows (a Linux build was announced but never released)
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://www.pumpsanity.net/downloads.php" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="StepP1+">
+                <h2 class="body-header">StepP1+</h2>
+                <p><span class="label-blue">Maintained</span> <span class="label-green">Recommended</span></p>
+                <p>
+                    StepP1+ is a community-maintained successor to <a href="#StepP1">StepP1</a>.
+                    It is an expansion of the <em>Pump it Up: PRIME 2015</em>, using decrypted graphics and audio ripped from the official game, with some extra assets borrowed from later games, and some original graphics.
+                    Some of the minor issues in StepP1 were fixed, including hold timing being made more accurate to arcade versions through hex editing.
+                    The theme and contents have also been decrypted, and are freely modifiable.
+                </p>
+                <p>
+                    Many quality of life improvements have been added to the theme, such as:
+                </p>
+                <ul>
+                    <li>Phoenix-style scoring</li>
+                    <li>Phoenix-style letter grades & plates</li>
+                    <li>Profile level & experience points</li>
+                    <li>Customizable profile avatars</li>
+                    <li>Indicators for "tournament legal" charts</li>
+                    <li>Song title and progress indicators during gameplay</li>
+                    <li>And way more than will fit here - check out the <a href="https://github.com/rayden-61/stepp1-plus/blob/main/CHANGELOG.txt" target="_blank">full changelog!</a></li>
+                </ul>
+                <p>
+                    StepP1+ is <strong>actively maintained</strong> and <strong>recommended</strong>.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Tons of compatible official and unofficial content</li>
+                        <li>Very stable, the only known crash being caused by having 0 songs</li>
+                        <li>Has an accompanying list of curated and maintained charts</li>
+                        <li>Available content up to <em>Pump it Up: Phoenix</em></li>
+                        <li>Large community</li>
+                        <li>Accurate mechanics and features up to <em>Pump it Up: Phoenix</em></li>
+                        <li>Includes PRIME 2-style adjustable AutoVelocity</li>
+                        <li>Runs well on unmodified arcade hardware (MK9 and up)</li>
+                        <li>Contains manu quality of life improvements over StepP1, especially for home use</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Very minor hold note inaccuracies, which can't be fixed due to no engine source code availability</li>
+                        <li>Menus and UI are less accurate to official PRIME 2015, if that bothers you</li>
+                        <li>No option for old-style scoring and letter grades</li>
+                        <li>Incompatible with StepP1 high scores and profiles due to scorekeeping changes</li>
+                        <li>Limited Lua API, many SM5 functions were stripped from the engine (mainly affects developers)</li>
+                        <li>Does not support PIUIO or cabinet lights, needs 3rd party driver to translate PIUIO to keyboard</li>
+                        <li>Cannot play PumpSanity simfiles</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://github.com/rayden-61/stepp1-plus" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="piured">
+                <h2 class="body-header">piured</h2>
+                <p><span class="label-blue">Maintained</span> <span class="label-green">Recommended</span></p>
+                <p>
+                    piured is a web-based simulator that runs <strong>entirely within your browser!</strong>
+                    It's the first of its kind, in that it was developed from the ground up without using StepMania, and without relying on borrowed source code from official games.
+                </p>
+                <p>
+                    It does require an account to get started, but you can sign up directly on the webpage. It includes the vast majority of official songs, plus a few customs.
+                    There may be a small amount of content missing here or there, but piulin is very receptive to feedback; contact him if anything is missing!
+                    There are daily challenges available, where you can compete for a spot on the in-game leaderboard against other worldwide players, and you can check out content that's currently trending among the playerbase.
+                </p>
+                <p>
+                    piured is <strong>recommended</strong> for anyone who wants to just jump right in and play without installing or downloading large amounts of content, and it's <strong>actively maintained</strong>!
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Extremely accessible, only requiring a web browser that supports WebGL (most of them)</li>
+                        <li>Most (if not all) content is included, and piulin is great about adding whatever isn't</li>
+                        <li>Runs well on extremely low spec devices</li>
+                        <li>Very close to, if not exact, arcade accurate mechanics</li>
+                        <li>Open source</li>
+                        <li>Not StepMania!</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Requires an account</li>
+                        <li>Requires a keyboard and mouse for menus, no pad controllable UI</li>
+                        <li>Loading times can be a little slow</li>
+                        <li>Requires an internet connection</li>
+                        <li>Relies on hosting for availability, and can periodically go down (potentially permanently, in the future)</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Anything with a WebGL-supported browser
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://piu.red" target="_blank">Play In Browser</a></span>
+                </p>
+            </div>
+
+            <div id="piuGBA">
+                <h2 class="body-header">piuGBA</h2>
+                <p><span class="label-blue">Maintained</span> <span class="label-purple">Unique</span></p>
+                <p>
+                    piuGBA is written from the ground up in C/C++ for the GameBoy Advance. It supports the SSC format for charts, with features including:
+                </p>
+                <ul>
+                    <li>Normal, hold, and fake notes</li>
+                    <li>BPM, scroll, and speed changes</li>
+                    <li>Stops and delays</li>
+                    <li>Warps (both the #WARPS tag and high-BPM warps)</li>
+                    <li>HQ audio and background videos (flashcart only)</li>
+                    <li>Rumble</li>
+                    <li>I/O and SRAM LED sync</li>
+                    <li>PS/2 keyboard input</li>
+                    <li>Doubles/Vs/Co-Op play with another console via link cable</li>
+                    <li>Tons more, check out the <a href="https://github.com/afska/piugba" target="_blank">GitHub page</a> for more!</li>
+                </ul>
+                <p>
+                    Different song packs are split into individual ROMs due to filesize limitations, but each ROM can contain plenty of songs.
+                    There are three types of ROMs: <strong>Campaign</strong>, <strong>Arcade</strong>, and <strong>Impossible</strong>.
+                    Campaign mode is kind of like mission zone, with unlock conditions for different songs. Arcade mode has all songs available for free play.
+                    Impossible mode throws fast-paced songs with hard to read modifiers at you, like blurring the screen and moving the notefield around.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Sick as hell</li>
+                        <li>Portable</li>
+                        <li>Works on emulators and real hardware</li>
+                        <li>Supports the majority of SSC features</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>GBA controls are a little limited</li>
+                        <li>Can cramp your hands</li>
+                        <li>Multiple ROMs can be unwieldy without a flashcart</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> GameBoy Advance
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://github.com/afska/piugba" target="_blank">GitHub</a></span><br/>
+                    <em>Information on obtaining pre-built ROMs is listed in the GitHub README file.</em>
+                </p>
+            </div>
+
+            <div id="RaveItOut">
+                <h2 class="body-header">Rave It Out</h2>
+                <p><span class="label-orange">Unmaintained</span> <span class="label-purple">Unique</span></p>
+                <p>
+                    Rave it Out is meant to be more of a standalone game of its own, rather than a Pump simulator.
+                    It has its own unique theme and features, timing windows, lifebar mechanics, scoring, and grading, and runs on a custom build of the StepMania engine, called SM-RIO.
+                    The game itself is themed around & prominently features North American pop music, but the engine has support built in for the StepF2 simfile standard, and can play most official converts.
+                </p>
+                <p>
+                    Rave it Out is <strong>unique!</strong> It's <strong>unmaintained</strong> because it's essentially a finished project, for now.
+                    It's a lot of fun, and it feels polished and well made. There isn't really much else like it.
+                    Give it a shot if you're ever itching to change it up a bit and play for accuracy and score, or want to listen to something out of the ordinary.
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Supports the StepF2 chart standard, so most conversions are playable with effects</li>
+                        <li>Visuals are clean, coherent, and stylish</li>
+                        <li>Refreshing change of pace, with varied mechanics and content compared to official Pump</li>
+                        <li>Made entirely with public domain assets & the theme is licensed as such, pay mode is OK</li>
+                        <li>Has a working hearts system</li>
+                        <li>Supports card readers, USB profiles, USB song loading, and addressable RGB lighting</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Has a memory leak</li>
+                        <li>Doesn't support StepF2 co-op charts</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Windows, Linux
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://sites.google.com/view/riodevs/downloads" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="FiveSteps">
+                <h2 class="body-header">FiveSteps</h2>
+                <p><span class="label-purple">Unique</span></p>
+                <p>
+                    FiveSteps is a Pump simulator for Android devices!
+                    I can't speak for this one personally, as I haven't used it before, but the project looks fantastic visually, and I've spoken to players who have very much enjoyed it.
+                    If you're looking to play PIU on the go, this is probably the next best thing from the official mobile game, which is long since discontinued.
+                </p>
+                <p>
+                    I'm not sure how accurate FiveSteps' simulation of official arcade mechanics is. If anyone does know and/or has some sources for their information, please let me know and I'll update this entry!
+                </p>
+                <p>
+                    <h3>Pros:</h3>
+                    <ul class="pros">
+                        <li>Great for mobile devices</li>
+                        <li>Supports StepF2/StepP1 SSC files</li>
+                        <li>Cloud storage for your scores, etc</li>
+                    </ul>
+                    <h3>Cons:</h3>
+                    <ul class="cons">
+                        <li>Touch controls can be iffy</li>
+                        <li>Not sure how accurate mechanics are</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Platforms: </strong> Android
+                </p>
+                <p>
+                    <span class="download-btn"><a href="https://play.google.com/store/apps/details?id=com.xsandartech.fivesteps" target="_blank">Download</a></span>
+                </p>
+            </div>
+
+            <div id="CurrentRec">
+                <h2 class="body-header">Okay, So What's the Best One?</h2>
+                <span class="body-text">
+                    <p>
+                        That's the best part - there isn't! Every simulator has its own quirks, and everyone has their own preferences for what they're willing to sacrifice for the features they want.
+                        Below are <strong>my personal recommendations</strong> based on both my own experiences, and the options I have seen others choose using the information available to them.
+                        Keep in mind, there's nothing stopping you from trying more than one out to see what you think!
+                    </p>
+                    <p>
+                        <span class="label-green">Stability:</span> If you want something that is <strong>accurate, maintained, trusted, stable,</strong> and <strong>supports the widest range of content</strong>, then you want <strong><a href="#StepP1+">StepP1+</a></strong>.
+                    </p>
+                    <p>
+                        <span class="label-green">Features:</span> If you want something that is <strong>accurate and maintained</strong> with the <strong> most potential for customizability,</strong> despite occasional bugs and the fact that it's alpha software, then you want <strong><a href="#Infinitesimal">Infinitesimal</a></strong>.
+                    </p>
+                    <p>
+                        <span class="label-green">Ease of Use:</span> If you want to play <strong><em>RIGHT NOW</em></strong> without downloading a bunch of content, but don't mind some missing songs here and there with no ability to add your own, then you want <strong><a href="#piured">piured</a></strong>.
+                    </p>
+                </span>
+            </div>
+
+            <br/>
+            <hr/>
+            <br/>
+
+            <div id="Simfiles">
+                <h2 class="body-header">What Are Simfiles?</h2>
+                <span class="body-text">
+                    <p>
+                        "Simfile" can be a pretty loose term, but for our purposes, we can define a simfile as a file containing all of the chart data and metadata for a song.
+                        This metadata includes all of the surface level information about a song (title, author, etc.), as well as paths to graphics, background/preview videos, and audio files for a single song.
+                        One simfile can contain several charts. Simfiles are pretty much always accompanied by audio and graphics files. Collections of songs are released as simfile packs.
+                        Here's an example of a typical simfile structure, using <em>BRAIN POWER</em> from the <em>Pump it Up: XX</em> simfile pack released by <em>The Resistance Simfiles</em>:
+                        <br/><br/>
+                        <div class="codebox">
+14 - XX<br/>
+└── 1697 - BRAIN POWER/<br/>
+    ├── 1697 - BRAIN POWER.ssc<br/>
+    ├── 1697.mp3<br/>
+    ├── 1697.png<br/>
+    ├── 1697_B.png<br/>
+    ├── 1697.mpg<br/>
+    ├── 1697_P.mpg<br/>
+    └── 1697-wide.png
+                        </div>
+                        And here are what those files correspond to:
+                        <br/>
+                        <p class="legend">
+                            <ul>
+                                <li><span class="attn-label">14 - XX</span>: The simfile pack itself, containing several simfiles.<br/></li>
+                                <li><span class="attn-label">1697 - BRAIN POWER</span>: The folder containing the simfile itself and other required assets.<br/></li>
+                                <li><span class="attn-label">1697 - BRAIN POWER.ssc</span>: The simfile itself, in .ssc format.<br/></li>
+                                <li><span class="attn-label">1697.mp3</span>: Audio for the song. Generally found in .ogg (preferred) or .mp3 format.<br/></li>
+                                <li><span class="attn-label">1697.png</span>: The background image for the song, seen on the loading screen or in the background during gameplay.<br/></li>
+                                <li><span class="attn-label">1697_B.png</span>: The banner image displayed on the song wheel on the song select screen.<br/></li>
+                                <li><span class="attn-label">1697.mpg</span>: The background video, shown during gameplay. Generally found in .mpg format.<br/></li>
+                                <li><span class="attn-label">1697_P.mpg</span>: The preview video, a cut-out section of the background video shown during song select. Generally found in .mpg format.<br/></li>
+                                <li><span class="attn-label">1697-wide.png</span>: An alternate background image, but widescreen! Seen on the loading screen or in the background during gameplay.<br/></li>
+                            </ul>
+                        </p>
+                    </p>
+                    <p>
+                        Something important to keep in mind is that <strong>simfile layouts are very arbitrary.</strong>
+                    </p>
+                    <p>
+                        It <strong>doesn't really matter</strong> what most of the files are called, aside from the extension, and <strong>not all of these have to be present.</strong>
+                        As long as there's a file that ends with ".ssc" that defines a path to a valid audio file, the simulator will recognize it and display it on the song select screen.-
+                        The majority of simfiles only include a handful of files, namely the SSC file itself, alongside a single background image, preview video, background video, and audio file.
+                        Simfiles from packs like the ones released by <em>The Resistance</em> are meant to be accurate to their arcade counterparts, and include song IDs that are as accurate as possible, to ensure they're sorted in the same order.
+                        Custom simfiles don't always try to adhere to this convention.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">File Formats</h2>
+                <span class="body-text">
+                    <p>
+                        Simulators support a variety of formats. Support differs slightly between many simulators, and some formats are generally preferred over others. Here's an overview.
+                    </p>
+                    <h3>Simfiles</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                <span class="attn-label">SSC</span> <span class="label-green">Recommended</span><br/>
+                                The modern and most widely used simfile format. Developed by the Spinal Shark Collective for "sm-ssc", which eventually becamse StepMania 5.
+                                The SSC format has several revisions used for different simulators.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">SM</span> <span class="label-blue">Outdated</span><br/>
+                                The original simfile format used by StepMania in the early days, before sm-ssc. Much more limited and restricted than the SSC format.
+                                Used mainly for older games, like the <em>Pump it Up: PRO</em> series, which was built on StepMania 4 and used this format.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">AMX</span> <span class="label-red">Not Recommended</span><br/>
+                                Made for StepMania AMX, a spinoff of StepMania 3.9 made by AldoMX.
+                                There isn't really a reason to use this anymore, but it's supported by select newer simulators, including StepF2/StepP1 and PumpSanity.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">KSF</span> <span class="label-red">Not Recommended</span><br/>
+                                Made for <em>Kick it Up</em>, the first known <em>Pump it Up</em> simulator developed and released from 1999 to 2001.
+                                <em>Kick it Up</em> was technically an official project, developed by (at the time) members of the PIU development team! VERY outdated though, just including this because it's neat.
+                                StepF2/StepP1 support it, if you ever stumble across files for it!<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">UCS</span> <span class="label-orange">Limited</span><br/>
+                                Not technically a simfile. UCS is a format used by official <em>Pump it Up</em> arcade titles, and stands for "User Custom Step."
+                                It's a very limited format, only really allowing for note placement and BPM changes. Included because most modern simulators technically support it.<br/>
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Audio</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                <span class="attn-label">OGG</span> <span class="label-green">Recommended</span><br/>
+                                An open, non-proprietary, patent/royalty-free compressed format. Highly recommended, due to widespread support and a lack of licensing/usage fees. Used in StepMania-based arcade games, like <em>In the Groove</em>.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">MP3</span> <span class="label-orange">Not Recommended</span><br/>
+                                A proprietary, compressed format. Licensing, especially for commercial projects, is very restrictive. Size:Quality ratio is generally worse than OGG. Commonly used because of how well-known it is, but not recommeded.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">WAV</span> <span class="label-orange">Not Recommended</span><br/>
+                                A free-to-use, uncompressed format that doesn't require a license. Because it's uncompressed, filesizes can get rather large. Doesn't really provide any advantages over OGG for anyone that isn't playing exclusively with audiophile equipment.<br/>
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Video</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                <span class="attn-label">MPEG2</span><br/>
+                                The most widely used codec, generally found in .mpg containers. Works the most consistly across all simulators.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">MPEG4</span><br/>
+                                More modern than MPEG2 and still widely used, generally found in .mp4 containers. Compatibility is hit or miss.
+                                For example, it tends to drift offsync in StepF2/StepP1/StepP1+ but plays back normally in Project OutFox.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">AVI</span><br/>
+                                An uncompressed format. Widely supported, but MASSIVE in filesize. Not recommended due to size.<br/>
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Graphics</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                <span class="attn-label">PNG</span><br/>
+                                An compressed, lossless format. One of the two most widely used.
+                                Generally larger in size, but not enough to make a difference as long as you aren't bundling in unnecessarily large images.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">JPG</span><br/>
+                                A compressed, lossy format. One of the two most widely used.
+                                Very efficient on file size, without noticeable visual artifacts in most cases.<br/>
+                            </li>
+                            <li>
+                                <span class="attn-label">BMP</span><br/>
+                                An uncompressed, lossless format.
+                                Contains its own colour palette for each individual image. Because each pixel is stored individually, filesizes can get quite large. Supported, but honestly just use PNG/JPG.<br/>
+                            </li>
+                        </ul>
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h3 class="body-header">SSC Versions</h3>
+                <span class="body-text">
+                    <p>
+                        This is a whole can of worms that I'll be getting into eventually. I'm leaving this as a stub for now until I have time to look further into it.
+                    </p>
+                    <p>
+                        For now, the gist of it is that <strong>different simulators may use different revisions</strong> of the SSC format.
+                        For example, StepF2 uses SSC version <strong>0.81</strong>, which is a version with slightly different behavior and specifications that was made and implemented for StepF2 by xMAx.
+                    </p>
+                    <p>
+                        Some simulators, like Project OutFox, rely on this #VERSION tag to tell the engine how to interpret the chart, and whether it needs to handle specific things a specific way.
+                        StepF2 charts would not play back as expected in OutFox if the version number is not properly specified, because it's programmed to read StepF2 charts a little diferently from other "pump" charts.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h2 class="body-header">Background Videos (BGAs)</h2>
+                <span class="body-text">
+                    <p>
+                        Background videos, also known as BGAs, can sometimes trip up people who are new to simulation and/or charting.
+                    </p>
+                    <h3>My songs don't have BGAs! How can I add them?</h3>
+                    <p>
+                        The answer to this one is a little complicated - <strong>it depends on the simfiles.</strong>
+                    </p>
+                    <p>
+                        Many simfile packs, such as the ones from <em>The Resistance Simfiles</em>, bundle the BGAs as part of a separate download.
+                        StepF2 and StepP1 simfiles also offer their BGAs as a separate download, which can be found on the official website.
+                        If the pack you use doesn't offer a separate download, it may be a lot more labour intensive to get them working; you may have to individually download BGAs online, and manually define and sync them in the SSCs by hand.
+                    </p>
+                    <p>
+                        You will need to retrace your steps back to where you got your files, and see whether or not they have a separate download available.
+                        If so, you will likely have to download and <strong>extract the videos to the SongMovies folder</strong>.
+                        This folder should be present in the root of the simulator's install directory, beside the Songs folder.
+                        <strong>If you do not have a SongMovies folder,</strong> you can make it yourself and extract the files to it and it should work fine, it's nothing fancy!
+                    </p>
+                    <h3>Do I need BGAs? Can I remove them?</h3>
+                    <p>
+                        A common question is quether or not BGAs are necessary, and whether they can be deleted to save space.
+                        <strong>Typically, yes! You can delete BGAs</strong> if they take up too much room, and they are not a necessity to keep around.
+                        The majority of simulators have a default background animation or graphic that they display when dedicated files are not defined or present.
+                    </p>
+                    <p>
+                        Most official simfiles <strong>store their BGAs in the SongMovies folder.</strong>
+                        If you're looking to free up some space, you can remove most of these - just <strong>do not remove Black.mpg</strong> or any equivalent!
+                        Other simfiles include their BGAs directly with the simfiles themselves, present in the same directory as the SSC file and such.
+                        These can also be deleted to free up space, but if you decide to do this, it's also a good idea to edit the SSC file directly in a text editor to remove any references to these files too.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h3 class="body-header">What Is Lua?</h3>
+                <span class="body-text">
+                    <p>
+                        Every once in a while you might encounter a simfile that contains .lua files. Lua is the scripting language used by StepMania for just about everything that isn't the engine itself.
+                        In this case, the Lua files present in simfiles contain scripted modifiers that can do just about anything, from recreating effects found in official <am>Pump it Up</em> charts, to creating entire minigames within the chart!
+                        One of my favourite examples ever of this is <em>Mawaru Infinity</em>, which was one of my first introductions to PIU as a whole:
+                    </p>
+                    <br/>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xfi_4IXq8q8?si=OERTzC3CWv7JvByb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>
+                        Lua is way too in-depth and open-ended for me to be able to delve into here, but I'll at least provide some useful resources:
+                    </p>
+                    <ul>
+                        <li><span class="attn-label"><a href="https://quietly-turning.github.io/Lua-For-SM5/" target="_blank">Lua For SM5</a></span> by quietly-turning</li>
+                        <li><span class="attn-label"><a href="https://outfox.wiki/en/dev/effects/EffectFiles-ModifierFiles" target="_blank">Modifier Files</a></span> via Project OutFox wiki</li>
+                        <li><span class="attn-label"><a href="https://outfox.wiki/en/dev/theming" target="_blank">Introduction to Theming</a></span> via Project OutFox wiki</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div>
+                <h3 class="body-header">Simfile Resources</h3>
+                <span class="body-text">
+                    <p>
+                        Unfortunately, Pump simfiles are rather hard to come by nowadays. It's very difficult to compile a comprehensive list on a site like this, because of how spread out it all is.
+                        For now, here are the basics to get you started:
+                    </p>
+                    <p>
+                        <ul>
+                            <li><span class="attn-label"><a href="https://www.facebook.com/TheResistance2019/" target="_blank">The Resistance Simfiles</a></span>: The go-to group for simfile pack recreations for <em>Pump it Up: PRIME 2</em> and onward.</li>
+                            <li><span class="attn-label"><a href="https://discord.com/invite/DRW66QvQR3" target="_blank">PIU Simfile Hub</a></span>: A Discord server I made for users to share their own work, and to link to others. Simfile creation support is also available!</li>
+                            <li><span class="attn-label"><a href="https://tillvit.github.io/smeditor/" target="_blank">SMEditor</a></span>: An up-and-coming, open source chart editor by tillvit. Available in-browser and as a download. Boasts some extremely cool features!</li>
+                            <li><span class="attn-label"><a href="https://arrowvortex.ddrnl.com/" target="_blank">ArrowVortex</a></span>: A fantastic standalone editor, developed by Fietsemaker. It's much more intuitive than the built-in StepMania editor and has a ton of useful features.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        I hate having to link to a Discord server instead of being able to provide these resources publicly without the need for an account, and for that I apologize.
+                        I would love to eventually be able to archive and make all of this information available without the need to join a server! I just don't have the time and resources available right now.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h3 class="body-header">Gimmick Guides</h3>
+                <span class="body-text">
+                    <p>
+                        I made a few gimmick guide videos a while back! I figure I should link them here as people have found them helpful. These are made using ArrowVortex, but the concepts work with any editor.
+                    </p>
+                    <br/>
+                    <div class="grid">
+                        <div class="col">
+                            <iframe class="youtube-video" src="https://www.youtube.com/embed/WVnfBs6I4QM?si=bxJ0xPIju74UeBqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></th>
+                        </div>
+                        <div class="col">
+                            <iframe class="youtube-video" src="https://www.youtube.com/embed/Q0CxcMNUK0k?si=Pwh1hSPWlGi1ug6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></th>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer" incl-html="/include/footer.html"></div>
+        </footer>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+
+</html>

@@ -130,6 +130,16 @@ div {
     text-shadow: rgba(0, 0, 0, 0.25) 2px 5px 5px;
 }
 
+.subheader {
+    font-family: 'Source Code Pro', monospace;
+    color: #e5c07b;
+    border-left: medium solid #e5c07b;
+    border-radius: 3px;
+    padding: 0px 0px 0px 10px;
+    margin: 10px 0px 10px 0px;
+    text-shadow: rgba(0, 0, 0, 0.25) 2px 5px 5px;
+}
+
 .body-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -187,6 +197,16 @@ summary {
 }
 
 ul {
+    line-height: 25px;
+    background: #32363e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px 15px 30px;
+    border-radius: 10px;
+}
+
+ol {
     line-height: 25px;
     background: #32363e;
     display: flex;
