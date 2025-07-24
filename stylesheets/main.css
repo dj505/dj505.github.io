@@ -220,6 +220,10 @@ ul.pros {
     border-left: medium solid #98c379;
 }
 
+ul.neutrals {
+    border-left: medium solid #e5c07b;
+}
+
 ul.cons {
     border-left: medium solid #e06c75;
 }
