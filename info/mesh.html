@@ -2,15 +2,15 @@
 
 <html>
     <head>
-        <title>Meshtastic | 5panel.dance</title>
+        <title>Mesh | 5panel.dance</title>
         <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
         <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
-        <meta property="og:title" content="My Meshtastic Nodes" />
+        <meta property="og:title" content="My Nodes" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://5panel.dance" />
         <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
-        <meta property="og:description" content="Information regarding my Meshtastic node hardware." />
+        <meta property="og:description" content="Information regarding my mesh network node hardware." />
         <meta name="theme-color" content="#61afef" />
         <meta name="viewport" content="width=device-width, initial-scale=0.5" />
         <script type="text/javascript" src="/script/incl-html.js"></script>
@@ -23,7 +23,6 @@
             <a href="#the-mesh">The 5panel.dance Mesh</a><br/>
             <a href="#edc">Everyday Carry Hardware</a><br/>
             <a href="#homebase">Home Base</a><br/>
-            <a href="#solar">Solar Node</a><br/>
         </div>
 
         <div class="content" id="top">
@@ -42,8 +41,11 @@
                     Info
                 </h2>
                 <dl>
-                    <dt>This is a page about my personal Meshtastic mesh network setup!</dt>
-                    <dd>I read a post on Bluesky saying all the cool nerds had websites for their meshes. That's the only reason this page exists.</dd>
+                    <dt>Come say hi!</dt>
+                    <dd>
+                        Saw one of my nodes or messages but couldn't seem to get a reply through? Message me through one of the contacts at the bottom of the page!
+                        I love having confirmation that things are working, and seeing how far messages can go :)
+                    </dd>
                 </dl>
             </div>
 
@@ -57,7 +59,7 @@
                         None of it is anything super fancy, but I think it's neat!
                     </p>
                     <p>
-                        Only a couple of my nodes have location information set, and they're all specific coordinates entered by hand with accuracy turned <strong>wayyyyy</strong> down for privacy reasons.
+                        Only a couple of my nodes have location information set, and they're all specific coordinates entered by hand with accuracy turned down.
                         Any maps my nodes may show up in do not reflect anywhere near their actual location, and are for extremely-vague-range-test-reference-number reasons only!
                     </p>
                 </span>
@@ -89,28 +91,6 @@
                     </p>
                     <p>
                         This node uses a GIZONT 17cm antenna from AliExpress, which was recommended by the community, and I've had good results with it.
-                    </p>
-                </span>
-            </div>
-
-            <div id="solar">
-                <h2 class="body-header">Solar Node</h2>
-                <span class="body-text">
-                    <p>
-                        I've been slowly but steadily putting together a solar node setup, with the most affordable parts I can find.
-                        It's still a major work in progress, so if you're reading this paragraph as-is, it's probably not totally accurate anymore!
-                        What I can say for certain won't change, though, is that the radio hardware is extremely similar to my <a href="#edc">EDC node.</a>
-                        It runs on an nRF52 <a href="https://github.com/gargomoma/fakeTec_pcb">fakeTec</a> and SX1262 HT-RA62 module combo again,
-                        with a BME280 temperature/humidity sensor, and <a href="https://www.aliexpress.com/item/1005006806330654.html">this particular cheap 5v regulated solar panel</a> from AliExpress.
-                        To keep it weatherproof, I used an SMA pigtail connector I had laying around which I previously bought by mistake for a portable node.
-                        The base was way too large to fit the shell, but that's because it has a rubber o-ring built in! Perfect for drilling into the side of a plastic box.
-                        However, for the next revision I'm moving to an N-female connector instead, which is a bit more fit for outdoor use.
-                    </p>
-                    <p>
-                        The antenna I plan to use with the new N-female connector is an ALFA AOA-915-5ACM, which I'm still waiting on as of writing this.
-                        However, it's currently using <a href="https://www.aliexpress.com/item/1005006833587735.html">this particular articulating antenna</a> I found on AliExpress.
-                        It's not amazing, and if you want a cheap antenna from AliExpress you're probably better off with a GIZONT whip antenna,
-                        but I made the (regrettable) decision to mount the SMA connector on the side of the box, forcing me to bend it up at a 90 degree angle.
                     </p>
                 </span>
             </div>
