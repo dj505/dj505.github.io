@@ -20,7 +20,7 @@
         <div class="back-to-top">
             Quick Index<br/><br/>
             <a href="#top">Back to Top</a><br/>
-            <a href="#the-mesh">The Proposed YEG Mesh</a><br/>
+            <a href="#the-mesh">The YEG Mesh</a><br/>
             <a href="#settings">LoRa Radio Settings</a><br/>
         </div>
 
@@ -51,13 +51,18 @@
             <br/>
 
             <div id="the-mesh">
-                <h2 class="body-header">The Proposed YEG Mesh</h2>
+                <h2 class="body-header">The YEG Mesh</h2>
                 <span class="body-text">
                     <p>
                         As the YEG mesh continues to expand, we've noticed that communication continues to be unreliable at best, and unusable at worst.
                         Despite there being 150 nodes and counting around the city, it's very rare that messages actually make it through to the intended destination, and keeping up a conversation is difficult.
-                        I'd like to propose that we follow in the footsteps of <a href="https://yycmesh.com" target="_blank">the YYC mesh</a> and adopt their <a href="https://yycmesh.com/about" target="_blank">their custom LoRa preset</a>!
-                        This change will roughly double our available bandwidth, and hopefully move communications to a part of the spectrum that's less noisy.
+                        To solve this, we're following in the footsteps of <a href="https://yycmesh.com" target="_blank">the YYC mesh</a>, and adopting their <a href="https://yycmesh.com/about" target="_blank">custom LoRa settings!</a>
+                        This change will roughly double our available bandwidth, move communications to a part of the spectrum that's less noisy, and hopefully avoid "rogue" nodes on old firmwares that can cause congestion.
+                    </p>
+                    <p>
+                        This change will be gradual, but we hope that by leaving a few beacons up on LongFast, we can urge more users to move to these new settings.
+                        Most of my own nodes have already been moved over, and several strong infrastructure nodes have also been moved.
+                        With enough coverage, it may even be possible to build a bridge to YYC, thanks to their resilient & well-built network!
                     </p>
                 </span>
             </div>
@@ -69,7 +74,7 @@
                 </a>
                 <span class="body-text">
                     <p>
-                        As this page is a work-in-progress, for the time being, I'm going to plagiarize the YYCMesh page's information until I'm typing on a real computer.
+                        This page is a work in progress, but these are the settings we're going to be using moving forward.
                         <strong>Please read the below guidelines before continuing!</strong> When ready, scan or tap the QR code to apply the settings. Or, you can apply them manually, as listed below.
                         To do so, navigate to Meshtastic App → Settings → LoRa and configure:
                     </p>
@@ -82,13 +87,15 @@ Frequency Override = 902.6875 MHz
                     </p>
                     <p>
                         The public channel is using the default <strong>Primary Channel 0</strong> settings (Key: AQ==).
+                        The channel name should not matter, however the iOS/Android apps should automatically set the channel name for you, and we encourage you to stick with it.
                     </p>
                     <h3 class="body-header">Guidelines</h3>
                     <p>
-                        Since this is a public test rollout, please adhere to some guidelines to make the shared experience positive for everyone. These are subject to change as testing progresses.
+                        For the time being, the following guidelines are mirrored from the yycmesh website.
+                        We politely request that you adhere to them as best you can, to ensure a positive experience for everyone on the mesh:
                     </p>
                     <ul>
-                        <li>Ensure you are running the latest stable Meshtastic firmware (currently 2.6.11). Running newer Alpha builds is acceptable and encouraged.</li>
+                        <li>Ensure you are running the latest stable Meshtastic firmware (currently 2.7.15). Running newer Alpha builds is acceptable and encouraged.</li>
                         <li>Refrain from any MQTT uplink/downlink activity (use LongFast instead). Personal ZERO-hop usage with the official Meshtastic MQTT servers is acceptable.</li>
                         <li>Do not use Router or Repeater roles on the public mesh. Use Client, Client_Base, or Client_Mute. (Client and Client_Base still route and repeat and allow you to contribute.)</li>
                         <li>Some nodes may need more hops depending on location. Test with 3 hops first and increase only if necessary. For unattended stationary nodes, limit them to 3 hops or fewer.</li>
