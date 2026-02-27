@@ -264,9 +264,9 @@ div.col {
     flex: 1;
 }
 
-.grid img {
+.gridimg {
   height: auto;
-  width: 1000%;
+  width: 100%;
 }
 
 .youtube-video {
@@ -358,5 +358,6 @@ details[open] summary ~ * {
     0%    {opacity: 0; margin-left: -10px}
     100%  {opacity: 1; margin-left: 0px}
 }
+
 
 
