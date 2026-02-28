@@ -14,6 +14,13 @@
         <meta name="theme-color" content="#61afef" />
         <meta name="viewport" content="width=device-width, initial-scale=0.5" />
         <script type="text/javascript" src="/script/incl-html.js"></script>
+        <script src="https://unpkg.com/swup@4"></script>
+        <script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+        <script>
+            const swup = new Swup({
+                plugins: [new SwupPreloadPlugin()]
+            });
+        </script>
     </head>
 
     <body>
@@ -25,7 +32,7 @@
             <a href="#Simfiles">Simfiles</a>
         </div>
 
-        <div class="content" id="top">
+        <div class="content transition-fade" id="swup">
             <a href="https://5panel.dance">
                 <h1 align="center" class="topper-h1">5panel.dance</h1>
             </a>

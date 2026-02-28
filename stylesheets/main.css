@@ -339,6 +339,8 @@ table td, table td {
     }
 }
 
+/* Animations */
+
 @keyframes leftAnimateIn {
     0% {
         opacity: 0;
@@ -359,5 +361,16 @@ details[open] summary ~ * {
     100%  {opacity: 1; margin-left: 0px}
 }
 
+.transition-fade {
+  transition: 0.4s ease;
+  opacity: 1;
+}
 
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateY(100pt);
+}
 
+html {
+  scroll-behavior: smooth;
+}
