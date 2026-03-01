@@ -368,7 +368,7 @@ details[open] summary ~ * {
 
 html.is-animating .transition-fade {
   opacity: 0;
-  transform: translateY(100pt);
+  transform: translateX(100pt);
 }
 
 html {
