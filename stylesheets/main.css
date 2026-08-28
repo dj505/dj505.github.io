@@ -77,6 +77,36 @@ div.info {
     }
 }
 
+div.info-alert {
+    padding: 10px 20px 20px 15px;
+    border-left: thick solid #e5c07b;
+    border-radius: 5px;
+    background-color: #1e222a;
+
+    h2 {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: initial;
+        color: #e5c07b;
+        margin-top: 10px;
+    }
+
+    dl {
+        margin: 0px 0px 0px 10px;
+    }
+
+    h6 {
+        margin-bottom: 0;
+    }
+
+    svg {
+        stroke: #e5c07b;
+        padding-right: 10px;
+    }
+}
+
 div.warn {
     padding: 10px 20px 20px 15px;
     border-left: thick solid #e5c07b;
