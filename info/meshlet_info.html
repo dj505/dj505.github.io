@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Meshlet Info | 5panel.dance</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/stylesheets/labels.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="Meshlet Info" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://5panel.dance" />
+        <meta property="og:image" content="https://dj505.github.io/assets/logo.jpg" />
+        <meta property="og:description" content="Information on the Meshlet PCB, its performance, and longevity in adverse conditions" />
+        <meta name="theme-color" content="#61afef" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <script type="text/javascript" src="/script/incl-html.js"></script>
+        <script src="https://unpkg.com/swup@4"></script>
+        <script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+        <script>
+            const swup = new Swup({
+                plugins: [
+                    new SwupPreloadPlugin(),
+                    new SwupHeadPlugin({ awaitAssets: true })
+                ],
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="back-to-top transition-fade" id="swup">
+            Quick Index<br/><br/>
+            <a href="#top">Back to Top</a><br/>
+            <a href="#about-meshlet">About Meshlet</a><br/>
+            <a href="#longevity-and-performance">Longevity & Performance</a><br/>
+        </div>
+
+        <div class="content transition-fade" id="swup">
+            <a href="https://5panel.dance">
+                <h1 align="center" class="topper-h1 wavy">
+                    <span>5</span>
+                    <span>p</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>.</span>
+                    <span>d</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>c</span>
+                    <span>e</span>
+                </h1>
+            </a>
+            <h2 align="center" class="topper-h2 wavy">
+                <span>↙️</span>
+                <span>↖️</span>
+                <span>⏺️</span>
+                <span>↗️</span>
+                <span>↘️</span>
+            </h2>
+
+            <p align="center"><a href="https://github.com/dj505">GitHub</a> • <a href="https://youtube.com/dj505itg">YouTube</a> • <a href="https://bsky.app/profile/5panel.dance">BlueSky</a> • <a href="https://discord.com/invite/ctMByBy">Discord</a> • <a href="https://ko-fi.com/dj505piu">Ko-Fi</a></p>
+
+            <br/>
+
+            <div class="info-alert" id="Alert" incl-html="/include/alert-banner.html"></div>
+
+            <br/>
+
+            <div id="about-meshlet">
+                <h2 class="body-header">About Meshlet</h2>
+                <span class="body-text">
+                    <p>
+                        <a href="https://www.5panel.dance/Meshlet/" target="_blank">Meshlet</a> (<a href="https://github.com/dj505/meshlet" target="_blank">project source</a>) is my custom LoRa mesh node PCB, designed around the Raspberry Pi RP2350. It aims to pack as many of the features as I want on-board, with room to attach extras with a little bit of soldering.
+                        I originally designed it for the Meshtastic® project, and later started using it for MeshCore as well, to help contribute to both meshes locally within my city. Since finishing version 2.0 in March of 2026, I've been torture testing the design under real-world conditions within a healthy, active, and steadily growing MeshCore network, where it needs to keep up with an exceptional amount of city-wide traffic!
+                    </p>
+                    <p>
+                        You can learn more about Meshlet and its features <a href="https://www.5panel.dance/Meshlet/" target="_blank">here</a>. But, to summarize what makes it different from other compact nodes, Meshlet includes several features that I consider essential for every repeater I deploy, without having to solder off-the-shelf modules to an already expensive dev board.
+                        It has a built-in INA3221 chip for monitoring power input/output on solar, battery charge level, and system voltage, as well as a BME280 for temperature and humidity. It also natively supports LiIon/LiPo <em>and</em> LiFePO4 battery cells for different uses in different environments.
+                        While USB power input is available, it can also accept input through a separate JST connector, and isn't limited to a strict 5V DC. The BQ25185 battery charging IC is tolerant up to 18V, and has MPPT-like functionality to pull the most power possible, as efficiently as possible, from an attached solar panel.
+                        All of this makes it an incredibly versatile board that I can deploy just about anywhere I need it, without having to think too hard about how I'll power it, or what sensors I need, or how I'm going to assemble everything. It's all just there, and all I need to do is plug it in!
+                    </p>
+                    <p>
+                        On this page, I will go into the Meshlet's real-world performance and how it has held up over this past summer in Canada, and how I expect it to hold up throughout the incoming winter months.
+                    </p>
+                </span>
+            </div>
+
+            <div id="longevity-and-performance">
+                <h2 class="body-header">Longevity & Performance</h2>
+                <img src="/assets/meshlet-repeater.jpg" align="right" width="200px" style="margin: 10px 20px 0px 20px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"/>
+                <span class="body-text">
+                    <p>
+                        As I'm writing this, it is currently October 11th in my home province of Alberta, Canada. We had our first snowfall yesterday, and I had just taken down my Meshlet repeater the day prior for end-of-season maintenance and a quick check-up. Here's what I found!
+                    </p>
+                    <p>
+                        I've had multiple Meshlets set up for a while, but this one is what I consider to be the most important one. This particular board was part of a batch that was very kindly sponsored by <a href="https://www.pcbway.com/" target="_blank">PCBWay</a>, who reached out to me not long after I received my first prototype batch and posted the initial results online.
+                        This was a fantastic opportunity for me to test out what I considered to be a proper, "production grade" board - I'm used to ordering prototypes with a HASL finish and spending hours building them on my own, then calling it Good Enough if they work, but PCBWay gave me the chance to manufacture the real thing.
+                        I'm talkin' a 4-layer board with ENIG finish and turnkey assembly, ready to plug in and use, without any extra work on my end except for plugging in a battery and shoving it into a box. Using an ENIG (electroless nickel immersion gold) finish, as opposed to HASL (hot air solder leveling), provides a few benefits - firstly, the surface finish is more even.
+                        This means that when components are soldered on, the legs sit as flush and even as possible, minimizing the chances of bad contacts that are hard to spot. Gold also doesn't tarnish and corrode, so having the contacts plated in it means it's a lot less likely to fail if exposed to some humidity, which is unavoidable when I'm deploying these things in cheap no-name electrical boxes I found on the internet.
+                        Lastly, but affordable 4-layer manufacturing means I can properly isolate all of the signal traces from power, and keep an unbroken ground plane under as much of it as possible! I'm only a hobbyist so I don't know the exact science, but this seems incredibly important when working with radio & high speed signals.
+                    </p>
+                    <p>
+                        So, how has this little board held up over the past 5-ish months? The answer is incredibly well! The current setup is as follows:
+                    </p>
+                    <ul>
+                      <li><strong>Solar panel:</strong> A cheap, barebones cell plugged into the USB connector on the Meshlet, which still allows for MPPT-like input.</li>
+                      <li><strong>Battery:</strong> A 3000mAh LiPo from MakerFocus, connected to & charged by the Meshlet.</li>
+                      <li><strong>Antenna:</strong> A GIZONT 45cm fiberglass N-type antenna, from AliExpress.</li>
+                      <li><strong>Accessories:</strong> An additional nRF52 "fakeTec" Meshtastic node, powered by the Meshlet's 3.3V line.</li>
+                    </ul>
+                    <p>
+                        Throughout the summer, the Meshlet had been consistently running the latest available build of MeshCore, and has only been taken down periodically to flash a new update when one was available. Aside from those instances, it was allowed to run without interference, aside from occasionally cleaning the solar panel. The result was only two notable outages!
+                    </p>
+                </span>
+                <h3 class="body-header">Results</h3>
+                <span class="body-text">
+                    <p>
+                        Now, for the interesting data. What caused the little bit of downtime this board experienced? How has it been performing? To be honest, I haven't been the most diligent at collecting hard data points, as this summer has also been one of the most hectic of my life, and this node has been running in the background of it all.
+                        But I will go through everything that I can recall, and include everything that I did happen to note down throughout that time.
+                    </p>
+                </span>
+                <br />
+                <h4 class="body-header">Weather Resistance</h3>
+                <span class="body-text">
+                    <p>
+                        This thing has been <strong>shockingly</strong> resilient thus far. This was a really weird summer; at one point, we experienced winds heavy enough to knock trees down, and rainfall heavy enough to cause flash-flooding all over the city.
+                        Several highways were closed for days, many a dozen cars were stranded in the middle of the street under 2+ meter deep water, and I myself was consistently without power and Internet. Lightning strikes that took down power <em>on the building this node was mounted to</em>.
+                        This board took it all like an absolute champ. This incident wasn't even responsible for any of the downtime! Despite still routing packets like a champ, I decided to open it up just to make sure it wasn't filling with water.
+                        Turns out, it was; when I opened the hatch a fair amount poured out, and there was condensation on the sides of the shell. Upon a closer inspection, though, the Meshlet was entirely unharmed. I'm not sure if a HASL finish would have changed that, but I'm very glad for the ENIG finish giving me some peace of mind when it comes to corrosion.
+                        A win for PCBWay's capabilities, to be sure.
+                    </p>
+                    <p>
+                        In total, this board survived 3 other notable lighting storms, all of which knocked out power on the building it's mounted to, without ever stopping routing packets. I've opened the shell to check for condensation after each storm, and while condensation has been present, it has not harmed the PCB; this has not held true for the HASL-finish PCB that makes up the accompanying fakeTec node.
+                        While the fakeTec still works, it has needed some cleaning and touch-ups to get rid of the tarnish and stop it from randomly failing. I don't think it's going to last a whole lot longer.
+                    </p>
+                    <p>
+                        My other concern was hot days. Like <strong>HOT</strong> hot days. The shell sits in direct sunlight, the solar panel absorbs a lot of energy from the sun, and the metal bracket the solar panel is attached do conducts a lot of that heat towards the case.
+                        On top of that, the BQ25185 is a linear voltage regulator. It turns any waste energy straight into heat. While the box has gotten rather toasty, though, the board has never suffered any issues as a result of the heat, as far as I can tell.
+                        I included pins to solder a thermistor to, just to make battery charging a little safer as it enables the temperature-sensitive charging cutoff, but I haven't really needed to use it yet. The BME280 as reported temperatures of roughly 50 degrees Celsius without issue.
+                        Thankfully, I am confident that the heat generated by the BQ25185 will be enough to keep the board & battery warm enough in the winter to resist the extreme cold! Maybe that's just wishful thinking. I'll be sure to update this page with the results.
+                        If you're reading this past March 2027 and it still hasn't been updated, scroll down to the contact box at the bottom of this page, pick a contact method, and yell at me to update it! Thank you :)
+                    </p>
+                </span>
+                <br />
+                <h4 class="body-header">Solar Power</h3>
+                <span class="body-text">
+                    <p>
+                        The next thing I was worried this board would struggle with is power. Most noes are based on either ESP32 or nRF52840 hardware. ESP32 hardware is widely considered to be terrible for solar nodes, at least with Meshtastic. There are certain firmware differences (and further optional modifications to the base firmware) that help a lot, but it's still never ideal.
+                        nRF52 hardware is renowned for its power efficiency, both with Meshtastic and MeshCore. A battery that would run an ESP32 node for a day or two could <em>easily</em> run an nRF52 node for a week or two. For the Meshlet, I decided not to use either of these! Instead, I stuck with a comfortable middle ground for me - the Raspberry Pi RP2350, the same chip used for the Pico 2 board.
+                        In the past I was a huge fan of its predecessor, the RP2040, but I was never designing anything that was meant to run on a battery for extended periods of time. The RP2350 is much better on battery power, and is designed more with battery-powered use cases in mind compared to the RP2040.
+                        Power consumption wise, on average, it sits somewhere in between the ESP32 and the nRF52. It's not nearly as hungry as the ESP32, but it also won't drop down to the couple of milliwatts an nRF52 is capable of running at. At the very least, it's more than capable of running on solar power!
+                    </p>
+                    <p>
+                        Both of the notable outages this node experienced this summer were power-related. Both of them were entirely avoidable if I did a few things differently.
+                    </p>
+                    <p>
+                        For a few days in the middle of the summer, we had a very overcast period that lasted about a week, if memory serves. Throughout this time, the mesh was undergoing a fair amount of growth, and the increase in traffic drained the battery low enough to cause a brownout that the node did not recover from.
+                        Also, very recently towards the beginning of autumn, we had a similar overcast period. It wasn't nearly as long, but it was colder. I think the drop in overall daylight hours, combined with the cold affecting the battery, might have caused the battery to once again run flat.
+                        So, what am I doing differently now to avoid this?
+                    </p>
+                    <p>
+                        A couple things needed to change. <strong>Firstly</strong>, the fakeTec node I have piggybacking off the Meshlet is running its own entire SX1262 that's also supporting a tiny amount of Meshtastic traffic. That has its own heartbeat LED, and was not configured to ever enter sleep mode.
+                        With how little MT traffic we really have, on top of the fact that it is essentially just a beacon to point people to where the activity is, it is safe to disable the heartbeat LED and enable power saving mode. This should cut down on several mA of power draw alone.
+                        <strong>Secondly,</strong> there exists a custom MeshCore firmware called <a href="https://github.com/IoTThinks/EasySkyMesh" target="_blank">EasySkyMesh</a>. Its goal is to incorporate heavy power-saving features into mainline MeshCore, and they distribute releases of their modified firmware with all the bleeding-edge power saving modifications that aren't part of the main branch.
+                        I've compiled a custom build of this firmware to run on the Meshlet. I haven't been able to test it extensively yet, but it cuts down on power considerably by sleeping the SX1262 until it hears a packet preamble, and it <em>should</em> make use of the RP2350's deep sleep. I haven't confirmed if this is the case or not yet. I'm not very good at C++ and I refuse to let an LLM touch my projects, lol.
+                        So far, though, it's done a fantastic job at cutting down on power draw, and I haven't seen any noticeable drop in the repeater's ability to route packets reliably. Times like these make me wish I had access to a power profiler!
+                    </p>
+                    <p>
+                        If I really wanted to make absolutely sure that this node doesn't fail throughout the winter, I could just throw more money at it. Buy a bigger solar panel, buy a bigger battery, and relegate the Meshtastic node functionality to a whole secondary unit.
+                        But that defeats the fun of making something super low-cost that I want to ensure is reliable. This isn't meant to be a project to spend a ton of money on.
+                    </p>
+                </span>
+                <br />
+                <h4 class="body-header">Reach & Reliability</h3>
+                <span class="body-text">
+                    <p>
+                        This section is a WIP. Check back in a few days! Until then, rest assured that it has been exceptionally reliable, and is effectively routing much of the mesh's traffic over this end of the city.
+                    </p>
+                </span>
+            </div>
+
+            <div>
+                <h3 class="body-header">Disclaimer</h3>
+                <span class="body-text">
+                    <p>
+                        Neither myself, nor this page, are affiliated with the Meshtastic® or MeshCore projects.
+                        Please see the <a href="https://meshtastic.org" target="_blank">Meshtastic® homepage</a> or <a href="https://meshcore.io/" target="_blank">MeshCore homepage</a> for more information on either project.
+                    </p>
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer" incl-html="/include/footer.html"></div>
+        </footer>
+
+        <script>
+            includeHTML();
+        </script>
+    </body>
+
+</html>
