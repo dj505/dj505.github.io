@@ -120,7 +120,6 @@
                         But I will go through everything that I can recall, and include everything that I did happen to note down throughout that time.
                     </p>
                 </span>
-                <br />
                 <h4 class="body-header">Weather Resistance</h3>
                 <span class="body-text">
                     <p>
@@ -142,7 +141,6 @@
                         If you're reading this past March 2027 and it still hasn't been updated, scroll down to the contact box at the bottom of this page, pick a contact method, and yell at me to update it! Thank you :)
                     </p>
                 </span>
-                <br />
                 <h4 class="body-header">Solar Power</h3>
                 <span class="body-text">
                     <p>
@@ -171,11 +169,29 @@
                         But that defeats the fun of making something super low-cost that I want to ensure is reliable. This isn't meant to be a project to spend a ton of money on.
                     </p>
                 </span>
-                <br />
                 <h4 class="body-header">Reach & Reliability</h3>
                 <span class="body-text">
                     <p>
-                        This section is a WIP. Check back in a few days! Until then, rest assured that it has been exceptionally reliable, and is effectively routing much of the mesh's traffic over this end of the city.
+                        I'm very happy to only have good things to say about this node's reliability so far. Over the time it's been up and running, it has very consistently provided coverage around the area, including traffic from the far edges of the city thanks to its height.
+                        Power seems to be very stable, with the node working reliably at as little as 3.8V on the external input, at which the BQ25185 is outputting roughly 3.26V to the rest of the system, which is absolutely crazy. I even verified this myself using a variable voltage bench power supply.
+                        Brownout only happens right towards the very bottom of the LiPo's low voltage cutoff, and there's absolutely no weirdness leading up to it, like the amnesia my old Heltecs suffered when the battery would drop too low and they'd forget all their settings.
+                        As of writing, the noise floor has been averaging -110dB for a long while, the clock has only drifted around a second or two in a few days, and uptime is 100% since the EasySkyMesh firmware flash.
+                    </p>
+                    <p>
+                        It's dark out right now, as I'm typing this. According to the INA3221, the battery is sitting at 3.75V (charged up to 4.0V about 3 days ago, with overcast weather ever since) with a reported draw of 0.03A, or roughly 0.11W, sitting idle. I'm sure this spikes quite a bit while undergoing heavy mesh traffic, but I'm quite happy with how low it's sitting.
+                        I need to double check whether I have the correct shunt resistor value set in the code, because it does seem suspiciously low. I'll update this page when I verify those numbers.
+                    </p>
+                    <p>
+                        The real challenge is going to be maintaining the current reliable uptime throughout the winter. Stay tuned to see how it goes! If you don't see any news by May 2027, please contact me through any channels listed at the bottom of the page and yell at me about it!
+                    </p>
+                </span>
+                <h4 class="body-header">Special Thanks</h4>
+                <span class="body-text">
+                    <p>
+                        I'd like go give a special thank you to everyone who contributed towards this board's existence. I had lots of help from folks on the Meshtastic Discord server for the design & electrical engineering side of things. Thank you especially to NomDeTom and Iris for their pointers!
+                        Huge thanks and shoutouts to Bedrock as well, your advice on component selection and time spent helping me figure out how to design around microcontrollers has been extremely valuable for all of my recent projects, especially this one.
+                        I would also like to give an extra special thanks to Aran from PCBWay for reaching out to me with the offer to sponsor this project and helping make my crazy manufacturing requests work out. I know it's your job, but you're a real one. Thank you to PCBWay as a whole for providing a beautiful PCB that genuinely hasn't given me any problems at all.
+                        If you're looking for a place to get your boards made, I emplore you to give them a shot!
                     </p>
                 </span>
             </div>
